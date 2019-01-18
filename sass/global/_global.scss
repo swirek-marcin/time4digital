@@ -1,3 +1,23 @@
+//Global CSS settings
+@import '../variables/fonts';
+@import '../variables/colors';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
 body {
-  background-color: #ddd;
+margin: 0 auto;
+font-family: Spartan, sans-serif;
+font-size: 30px;
+background-color: violeqa;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1384px;
+  max-width: 100%;
 }

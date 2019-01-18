@@ -1,2 +1,33 @@
-body { background-color: #ddd; }
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; border: 1px solid red; }
+
+body { margin: 0 auto; font-family: Spartan, sans-serif; font-size: 30px; background-color: violeqa; }
+
+.container { margin: 0 auto; width: 1384px; max-width: 100%; }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 /*# sourceMappingURL=main.css.map */

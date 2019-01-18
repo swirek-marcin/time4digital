@@ -6,14 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 body {
 margin: 0 auto;
 font-family: Spartan, sans-serif;
-font-size: 30px;
-background-color: violeqa;
+right: 0;
+top: 0;
+// transition: .5s all linear;
 }
 
 .container {

@@ -1,3 +1,85 @@
 //Navigation section
 @import '../variables/colors';
 @import '../variables/fonts';
+
+body.active {
+  position: absolute;
+  right: 300px;
+  top: 0;
+  transition: .5s all linear;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-left: 25px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background-color: $mobile-menu-background;
+  z-index: 999;
+  // opacity: .9;
+  transition: .5s all linear;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu-item {
+  list-style-type: none;
+  text-align: left;
+  font-size: $font-size-l;
+  padding-left: 42px;
+  font-family: $spartan;
+  line-height: 80px;
+
+  >a {
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &:first-child {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-xs;
+    color: $mobile-menu-controller;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  font-size: $font-size-s;
+  color: $hamburger-icon;
+}
+
+
+.menu-controller {
+  display: flex;
+  align-items: center;
+
+  // &:first-child {
+  //   font-size: $font-size-xs;
+  //   color: $mobile-menu-controller;
+  // }
+}
+
+.menu-controller-icon {
+  padding-right: 32px;
+  font-size: $font-size-l;
+}

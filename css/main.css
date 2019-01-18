@@ -15,7 +15,27 @@
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+body.active { position: absolute; right: 300px; top: 0; transition: .5s all linear; }
+
+.logo-container { height: 80px; background-color: yellow; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+
+.logo-img { margin-left: 25px; }
+
+.menu { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; top: 0; right: -320px; width: 300px; height: 100vh; background-color: #2a2a2a; z-index: 999; transition: .5s all linear; }
+
+.menu.active { right: 0; }
+
+.menu-item { list-style-type: none; text-align: left; font-size: 24px; padding-left: 42px; font-family: Spartan, "Roboto", sans-serif; line-height: 80px; }
+
+.menu-item > a { color: #fff; text-transform: uppercase; text-decoration: none; }
+
+.menu-item:first-child { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 14px; color: #797979; }
+
+.hamburger { position: absolute; top: 30px; right: 24px; font-size: 18px; color: #4d4d4d; }
+
+.menu-controller { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+
+.menu-controller-icon { padding-right: 32px; font-size: 24px; }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -23,9 +43,11 @@
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-* { margin: 0; padding: 0; box-sizing: border-box; border: 1px solid red; }
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-body { margin: 0 auto; font-family: Spartan, sans-serif; font-size: 30px; background-color: violeqa; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; }
 
 .container { margin: 0 auto; width: 1384px; max-width: 100%; }
 

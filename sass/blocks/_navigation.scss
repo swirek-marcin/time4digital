@@ -96,8 +96,10 @@ body.active {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+  
     width: 100%;
-    right: calc((100% - 1384px) / 2);
+    right: 0;
+    // right: calc((100% - 1384px) / 2);
     background-color: transparent;
     height: 80px;
   }

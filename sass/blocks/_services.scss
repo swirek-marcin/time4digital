@@ -1,3 +1,70 @@
 //Services section
 @import '../variables/colors';
 @import '../variables/fonts';
+
+.services {
+  margin-top: -6px;
+}
+
+.services-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.services-btn {
+  margin: 0 auto;
+  border: 2px solid $yellow;
+  background-color: transparent;
+  font-family: $spartan;
+  color: $yellow;
+  font-size: $font-size-l;
+  margin: 90px auto;
+  cursor: pointer;
+}
+
+.services-1 {
+  background-image: url(../../images/painting_480.png);
+  // height: 250px;
+}
+
+.services-2 {
+  background-image: url(../../images/scizzors_480.png);
+  // height: 250px;
+}
+
+.services-3 {
+  background-image: url(../../images/floor_480.png);
+  // height: 250px;
+}
+
+.services-4 {
+  background-image: url(../../images/panels_480.png);
+  // height: 250px;
+}
+
+.services-btn-1 {
+  width: 200px;
+  height: 70px;
+}
+
+.services-btn-2 {
+  width: 200px;
+  height: 70px;
+}
+
+.services-btn-3 {
+  width: 200px;
+  height: 70px;
+}
+
+.services-btn-4 {
+  width: 200px;
+  height: 70px;
+}

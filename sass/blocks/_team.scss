@@ -1,3 +1,51 @@
 //Team section
 @import '../variables/colors';
 @import '../variables/fonts';
+
+.team {
+  background-color: $background-black;
+}
+
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  height: 260px;
+  width: 90%;
+  border: 1px solid $border-gray;
+  margin-top: 10px;
+  
+  &:nth-child(1) {
+    margin-top: 30px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-img {
+  margin: 36px auto;
+}
+
+.team-member {
+  color: $team-name;
+  text-transform: uppercase;
+  font-size: $font-size-xs;
+  line-height: 25px;
+}
+
+.team-paragraph {
+  color: $team-paragraph;
+  font-size: $font-size-xs;
+  font-family: $roboto;
+  text-align: center;
+  line-height: 25px;
+}

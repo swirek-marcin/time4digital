@@ -47,6 +47,7 @@ body.active {
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
+    // line-height: 25x;
   }
 
   &:first-child {
@@ -90,30 +91,28 @@ body.active {
 
 //Min width 1024px
 @media all and (min-width:1024px) {
-  // .navigation {
-  //   width: 100%;
-  //   margin: 0 auto;
-  // }
-
   .menu {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     right: calc((100% - 1384px) / 2);
-    // left: calc((100% - 1384px) / 2);
     background-color: transparent;
     height: 80px;
   }
 
   .menu-item {
+    display: flex;
+    align-items: center;
     font-size: $font-size-xxs;
     padding-right: 37px;
     padding-left: 0;
     text-align: center;
+    line-height: 20px;
 
     >a {
       color: $mobile-menu-background;
+      line-height: 70px;
       transition: .3s;
 
       &::after {

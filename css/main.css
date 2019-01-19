@@ -42,8 +42,8 @@ body.active { position: absolute; right: 300px; top: 0; }
 @media all and (min-width: 480px) { .menu { width: 382px; right: -390px; } }
 
 @media all and (min-width: 1024px) { .menu { -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100%; right: calc((100% - 1384px) / 2); background-color: transparent; height: 80px; }
-  .menu-item { font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; }
-  .menu-item > a { color: #2a2a2a; transition: .3s; }
+  .menu-item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; line-height: 20px; }
+  .menu-item > a { color: #2a2a2a; line-height: 70px; transition: .3s; }
   .menu-item > a::after { content: ''; display: block; width: 98%; border: 3px solid #f8db14; visibility: hidden; }
   .menu-item:hover a { color: #f8db14; cursor: pointer; }
   .menu-item:hover a::after { visibility: visible; }

@@ -13,9 +13,27 @@
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
+.hero { overflow: hidden; position: relative; }
+
+.hero-text-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; position: absolute; top: 56px; text-align: center; text-transform: uppercase; }
+
+.hero-name { color: #d8d8d8; font-size: 24px; line-height: 48px; }
+
+.hero-services { padding-bottom: 47px; color: #fff; font-size: 30px; }
+
+.hero-paragraph { font-size: 14px; color: #fff; padding-bottom: 20px; }
+
+.hero-btn { width: 300px; height: 54px; border: none; font-size: 14px; text-transform: uppercase; font-family: spartan; cursor: pointer; }
+
+.hero-btn-one { background-color: #f8db14; margin-bottom: 15px; }
+
+.hero-btn-two { background-color: rgba(0, 0, 0, 0.5); color: #f8db14; margin-bottom: 42px; }
+
+.hero-arrow-down { font-size: 14px; color: #fff; }
+
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-body.active { position: absolute; right: 300px; top: 0; }
+body.active { position: absolute; right: 300px; top: 0; transition: .5s all linear; }
 
 .logo-container { height: 80px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
@@ -44,7 +62,7 @@ body.active { position: absolute; right: 300px; top: 0; }
 @media all and (min-width: 1024px) { .menu { -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100%; right: calc((100% - 1384px) / 2); background-color: transparent; height: 80px; }
   .menu-item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; line-height: 20px; }
   .menu-item > a { color: #2a2a2a; line-height: 70px; transition: .3s; }
-  .menu-item > a::after { content: ''; display: block; width: 98%; border: 3px solid #f8db14; visibility: hidden; }
+  .menu-item > a::after { content: ''; display: block; width: 98%; border: 3px solid #f8db14; background-color: #f8db14; visibility: hidden; }
   .menu-item:hover a { color: #f8db14; cursor: pointer; }
   .menu-item:hover a::after { visibility: visible; }
   .menu-item:first-child { display: none; }

@@ -6,6 +6,7 @@ body.active {
   position: absolute;
   right: 300px;
   top: 0;
+  transition: .5s all linear;
 }
 
 .logo-container {
@@ -120,6 +121,7 @@ body.active {
         display: block;
         width: 98%;
         border: 3px solid $yellow;
+        background-color: $yellow;
         visibility: hidden;
       }
     }

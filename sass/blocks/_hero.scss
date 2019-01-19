@@ -1,3 +1,62 @@
 //Hero section
 @import '../variables/colors';
 @import '../variables/fonts';
+
+.hero {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-name {
+  color: $hero-name;
+  font-size: $font-size-l;
+  line-height: 48px;
+}
+
+.hero-services {
+  padding-bottom: 47px;
+  color: $white;
+  font-size: $font-size-xl;
+}
+
+.hero-paragraph {
+  font-size: $font-size-xs;
+  color: $white;
+  padding-bottom: 20px;
+}
+
+.hero-btn {
+  width: 300px;
+  height: 54px;
+  border: none;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  font-family: spartan;
+  cursor: pointer;
+
+  &-one {
+    background-color: $yellow;
+    margin-bottom: 15px;
+  }
+
+  &-two {
+    background-color: rgba($black, 0.5);
+    color: $yellow;
+    margin-bottom: 42px;
+  }
+}
+
+.hero-arrow-down {
+  font-size: $font-size-xs;
+  color: $white;
+}

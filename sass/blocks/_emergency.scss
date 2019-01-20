@@ -1,0 +1,27 @@
+//Emergency section
+@import '../variables/colors';
+@import '../variables/fonts';
+
+.emergency {
+  background-color: $yellow;
+}
+
+.emergency-container {
+  width: 90%;
+  text-align: center;
+}
+
+.emergency-header {
+  font-family: $roboto;
+  color: $emergency-paragraph;
+  font-size: $font-size-s;
+  padding: 33px 0 38px 0;
+}
+
+.emergency-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: $font-size-s;
+  padding-bottom: 40px;
+}

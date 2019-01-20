@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
@@ -147,6 +148,16 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 .team-member { color: #595959; text-transform: uppercase; font-size: 14px; line-height: 25px; }
 
 .team-paragraph { color: #c6c6c6; font-size: 14px; font-family: "Roboto", Spartan, sans-serif; text-align: center; line-height: 25px; }
+
+@font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+
+.emergency { background-color: #f8db14; }
+
+.emergency-container { width: 90%; text-align: center; }
+
+.emergency-header { font-family: "Roboto", Spartan, sans-serif; color: #9c8b18; font-size: 18px; padding: 33px 0 38px 0; }
+
+.emergency-phone { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; font-size: 18px; padding-bottom: 40px; }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 

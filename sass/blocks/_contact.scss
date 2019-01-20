@@ -1,3 +1,192 @@
 //Contact section
 @import '../variables/colors';
 @import '../variables/fonts';
+
+.contact {
+  background-color: $black;
+  background-image: url(../../images/test.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 70%;
+  // height: 800px; //Skasowac sztywna wartosc
+
+  &-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &-logo-img {
+    margin-top: 43px;
+    margin-bottom: 40px;
+  }
+
+  &-logo {
+    border-bottom: 1px solid $contact-after;
+  }
+}
+
+.contact-address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  color: $contact-name;
+  font-family: $roboto;
+  border-bottom: 1px solid $contact-after;
+
+  &-item {
+    width: 80%;
+    padding-bottom: 44px;
+  }
+
+  &-name {
+    padding-top: 28px;
+
+    span {
+      font-size: $font-size-s;
+      font-family: $roboto;
+      text-transform: uppercase;
+      color: $contact-name;
+      font-weight: 700;
+    }
+  }
+
+  &-mail {
+    span {
+      color: $yellow;
+    }
+  }
+}
+
+.contact-social {
+  border-bottom: 1px solid $contact-after;
+
+  p {
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    color: $text-contact-social;
+    padding: 28px;
+    text-align: center;
+  }
+
+  &-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 54px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 28px;
+    border: none;
+    background-color: $yellow;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: $yellow;
+      position: absolute;
+    }
+
+    &::before {
+      transform: rotate(60deg);
+    }
+
+    &::after {
+      transform: rotate(-60deg);
+    }
+
+    i {
+      z-index: 998;
+      font-size: $font-size-m;
+    }
+  }
+}
+
+.contact-menu {
+  display: flex;
+
+  &-item {
+    list-style-type: none;
+    padding: 5px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 8px;
+      text-transform: uppercase;
+      line-height: 72px;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+.contact-map {
+  // background-image: url(../../images/map_480.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // filter: grayscale(30);
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+
+  img {
+    filter: grayscale(40);
+  }
+
+  &-hexagon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 38px;
+    border: none;
+    background-color: $yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      position: absolute;
+      top: 200%;
+      color: $yellow;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $font-size-xs;
+      width: 80px;
+    }
+
+    i {
+      z-index: 997;
+      font-size: $font-size-m;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: $yellow;
+      position: absolute;
+    }
+
+    &::before {
+      transform: rotate(60deg);
+    }
+
+    &::after {
+      transform: rotate(-60deg);
+    }
+  }
+}

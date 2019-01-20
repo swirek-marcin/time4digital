@@ -1,3 +1,18 @@
 //Footer section
 @import '../variables/colors';
 @import '../variables/fonts';
+
+footer {
+  font-family: $roboto;
+  font-size: $font-size-xxs;
+  color: $copy-year;
+  line-height: 75px;
+  text-align: center;
+  background-color: $contact-after;
+
+  span {
+    font-size: $font-size-xxxs;
+    color: $copy-webmaster;
+  }
+
+}

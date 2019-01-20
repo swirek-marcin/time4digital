@@ -82,6 +82,28 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
+.realizations-header { font-size: 30px; text-transform: uppercase; padding-top: 42px; padding-bottom: 33px; }
+
+.realizations-text-container { width: 90%; margin: 0 auto; }
+
+.realizations-paragraph { font-size: 14px; color: #585858; font-family: "Roboto", Spartan, sans-serif; line-height: 24px; }
+
+.realizations-controller-container { width: 90%; margin: 0 auto; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; padding-bottom: 42px; padding-top: 34px; }
+
+.realizations-controller-container > a { text-decoration: none; text-transform: uppercase; color: #f8db14; font-size: 14px; }
+
+.realizations-controller-arrows { font-size: 23px; }
+
+.realizations-controller-arrows > i { padding-right: 20px; }
+
+.realizations-item { width: 90%; overflow: hidden; margin: 0 auto; border: 1px solid #e9e9e9; margin-bottom: 10px; }
+
+.realizations-item:nth-child(3) { margin-bottom: 33px; }
+
+.realizations-item-header { font-size: 18px; padding: 34px 20px 27px 20px; }
+
+.realizations-item-paragraph { font-size: 14px; font-family: "Roboto", Spartan, sans-serif; line-height: 24px; color: #8c8c8c; padding: 0 20px 38px 20px; }
+
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
 .services { margin-top: -6px; }

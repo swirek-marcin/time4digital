@@ -31,7 +31,7 @@
 
 .contact-address-mail span { color: #f8db14; }
 
-.contact-social { border-bottom: 1px solid #1e1e1e; }
+.contact-social { border-bottom: 1px solid #1e1e1e; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
 .contact-social p { font-size: 14px; text-transform: uppercase; color: #666666; padding: 28px; text-align: center; }
 
@@ -47,11 +47,11 @@
 
 .contact-social-item i { z-index: 998; font-size: 23px; }
 
-.contact-menu { display: -ms-flexbox; display: flex; }
+.contact-menu { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.contact-menu-item { list-style-type: none; padding: 5px; }
+.contact-menu-item { display: -ms-flexbox; display: flex; list-style-type: none; width: 45%; font-size: 12px; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.contact-menu-item a { text-decoration: none; color: #fff; font-size: 8px; text-transform: uppercase; line-height: 72px; }
+.contact-menu-item a { text-decoration: none; color: #fff; text-transform: uppercase; line-height: 52px; }
 
 .contact-menu-item a:hover { color: #f8db14; }
 
@@ -72,19 +72,19 @@
 .contact-map-hexagon::after { transform: rotate(-60deg); }
 
 @media all and (min-width: 480px) { .contact { background-position-x: 110%; background-position-y: 10%; }
-  .contact-address-item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 50%; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; } }
+  .contact-address-item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 50%; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+  .contact-social { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; padding: 20px 0; }
+  .contact-social-item { margin: 22px 14px; }
+  .contact-social-icons { padding-bottom: 0; }
+  .contact-menu { -ms-flex-pack: justify; justify-content: space-between; }
+  .contact-menu-item { width: 20%; }
+  .contact-menu-item a { font-size: 8px; padding: 0; width: 100%; text-align: center; } }
 
-.contact-social { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
+@media all and (min-width: 610px) { .contact-menu-item a { font-size: 11px; line-height: 70px; } }
 
-.contact-social-item { margin: 22px 14px; }
-
-.contact-social-icons { padding-bottom: 0; }
-
-.contact-menu { -ms-flex-pack: justify; justify-content: space-between; }
-
-.contact-menu-item a { font-size: 12px; }
-
-@media all and (min-width: 768px) { .contact-address-item { width: 30%; padding-bottom: 0; }
+@media all and (min-width: 768px) { .contact { background-color: #000; background-image: url(../../images/test.png); background-repeat: no-repeat; background-position-x: -300px; background-position-y: -100px; }
+  .contact-social { padding: 0; }
+  .contact-address-item { width: 30%; padding-bottom: 0; }
   .contact-menu-item a { font-size: 13px; }
   .contact-map img { width: 100%; }
   .contact-social-icons { margin: 30px 0; } }
@@ -124,6 +124,8 @@ footer span { font-size: 12px; color: #7f7f7f; }
   .slider-controller-right { right: 25px; }
   .slider-controller-icon { display: block; }
   .hero-services { font-size: 36px; } }
+
+@media all and (min-width: 768px) { .slider-controller { bottom: 30vh; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -278,7 +280,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 .other-services-btn:nth-of-type(3) { margin-bottom: 61px; }
 
 @media all and (min-width: 480px) { .other-services-header { font-size: 20px; }
-  .other-services-btn { width: 300px; height: 65px; } }
+  .other-services-btn { width: 60%; height: 65px; } }
 
 @media all and (min-width: 768px) { .other-services-header { line-height: 130px; }
   .other-services-btn-container { -ms-flex-pack: distribute; justify-content: space-around; }
@@ -328,7 +330,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; border: 1px solid red; }
 
 body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; transition: .5s all linear; }
 

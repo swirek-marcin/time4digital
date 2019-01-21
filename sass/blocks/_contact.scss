@@ -59,6 +59,8 @@
 
 .contact-social {
   border-bottom: 1px solid $contact-after;
+  display: flex;
+  flex-direction: column;
 
   p {
     font-size: $font-size-xs;
@@ -110,17 +112,23 @@
 
 .contact-menu {
   display: flex;
+  flex-wrap: wrap;
+
 
   &-item {
+    display: flex;
     list-style-type: none;
-    padding: 5px;
+    width: 45%;
+    font-size: $font-size-xxxs;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 
     a {
       text-decoration: none;
       color: $white;
-      font-size: 8px;
       text-transform: uppercase;
-      line-height: 72px;
+      line-height: 52px;
 
       &:hover {
         color: $yellow;
@@ -200,38 +208,71 @@
     align-items: center;
     justify-content: center;
   }
-}
 
-.contact-social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  &-item {
-    margin: 22px 14px;
+  .contact-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    &-item {
+      margin: 22px 14px;
+    }
+
+    &-icons {
+      padding-bottom: 0;
+    }
   }
 
-  &-icons {
-    padding-bottom: 0;
+  .contact-menu {
+    justify-content: space-between;
+
+    &-item {
+      width: 20%;
+      a {
+        font-size: 8px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+       }
+    }
   }
 }
 
-.contact-menu {
-  justify-content: space-between;
-
-  &-item {
-    a {
-      font-size: $font-size-xxxs;
+//Min width 610px 
+@media all and (min-width: 610px) {
+  .contact-menu {
+    &-item {
+      a {
+        font-size: 11px;
+        line-height: 70px;
+      }
     }
   }
 }
 
 //Min width 768px
 @media all and (min-width:768px) {
+  .contact {
+    background-color: $black;
+    background-image: url(../../images/test.png);
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    background-position-y: -100px;
+
+    &-social {
+      padding: 0;
+    }
+  }
+
   .contact-address-item {
     width: 30%;
     padding-bottom: 0;
   }
+
+
 
   .contact-menu-item {
     a {

@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 70%;
-  // height: 800px; //Skasowac sztywna wartosc
 
   &-container {
     width: 90%;
@@ -131,11 +130,6 @@
 }
 
 .contact-map {
-  // background-image: url(../../images/map_480.png);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // filter: grayscale(30);
   overflow: hidden;
   height: 250px;
   position: relative;

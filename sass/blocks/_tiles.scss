@@ -12,7 +12,7 @@
 
 .tiles-header {
   text-transform: uppercase;
-  font-size: $font-size-l; //zmienic fs na 480px
+  font-size: $font-size-l;
   color: $tiles-header;
   line-height: 130px;
   background-image: url(../../images/services_article.png);
@@ -32,7 +32,6 @@
   font-size: $afont-size-s;
   color: $tiles-paragraph;
   line-height: 30px;
-  // padding-bottom: 31px;
 }
 
 .tiles-img {
@@ -54,7 +53,6 @@
     padding-bottom: 33px;
   }
 }
-
 
 .msg-name,
 .msg-mail,
@@ -102,14 +100,73 @@
   }
 
   &-subheader {
-      color: $tiles-info-span;
-      font-size: $font-size-s;
-      padding: 0 15px 20px 15px; 
+    color: $tiles-info-span;
+    font-size: $font-size-s;
+    padding: 0 15px 20px 15px;
   }
 
   &-paragraph {
     padding: 0 15px 36px 15px;
     color: $tiles-info-paragraph;
     font-size: $font-size-xs;
+  }
+}
+
+//RWD
+//Min width 480px
+@media all and (min-width: 480px) {
+  .tiles-header {
+    font-size: $font-size-xl;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .tiles-form {
+    h3 {
+      width: 80%;
+    }
+  }
+  
+  .msg-name,
+  .msg-mail,
+  .msg-subject {
+    width: 80%;
+  }
+
+  .msg-input {
+    height: 95px;
+    width: 80%;
+  }
+
+  .form-submit {
+    width: 80%;
+  }
+}
+
+//Min width 768px 
+@media all and (min-width: 768px) {
+  .tiles-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tiles-img {
+    margin: 65px auto;
+  }
+
+    .tiles-form {
+      h3 {
+        width: 80%;
+      }
+      :nth-child(2) {
+        width: 39%;
+        margin-right: 1%;
+      }
+
+      :nth-child(3) {
+        width: 39%;
+        margin-left: 1%;
+      }
+    
   }
 }

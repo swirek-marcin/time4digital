@@ -68,3 +68,11 @@
   width: 200px;
   height: 70px;
 }
+
+//RWD
+//min width 768px
+@media all and (min-width:768px) {
+  .services-item {
+    width: 50%;
+  }
+}

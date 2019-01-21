@@ -21,3 +21,15 @@
   margin-bottom: 28px;
 }
 
+.realizations-item-article {
+  width: 100%;
+}
+
+//RWD 
+//Min width 768px 
+@media all and (min-width: 768px) {
+  .realizations-btn-article {
+    margin-bottom: 50px;
+  }
+}
+

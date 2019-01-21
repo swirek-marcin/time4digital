@@ -25,4 +25,27 @@
   justify-content: space-around;
   font-size: $font-size-s;
   padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.emergency-number {
+  font-size: $font-size-l;
+}
+
+//RWD
+//min width 768px
+@media all and (min-width: 768px) {
+  .emergency-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .emergency-phone {
+    justify-content: space-around;
+  }
+
+  .emergency-phone {
+    padding-bottom: 0;
+    flex-grow: 1;
+  }
 }

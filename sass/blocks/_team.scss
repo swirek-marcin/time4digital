@@ -21,7 +21,7 @@
   width: 90%;
   border: 1px solid $border-gray;
   margin-top: 10px;
-  
+
   &:nth-child(1) {
     margin-top: 30px;
   }
@@ -48,4 +48,25 @@
   font-family: $roboto;
   text-align: center;
   line-height: 25px;
+}
+
+//RWD 
+//Min width 1024px
+@media all and (min-width: 1024px) {
+  .team-item {
+    width: 32%;
+    margin: 0;
+    height: 310px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+
+    &:nth-child(1) {
+      margin-top: 37px;
+    }
+  }
+
+  .team-flex {
+    justify-content: space-between;
+    padding: 0 37px;
+  }
 }

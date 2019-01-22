@@ -93,6 +93,7 @@ body.active {
 //Min width 1024px
 @media all and (min-width:1024px) {
   .menu {
+    position: absolute;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -115,14 +116,14 @@ body.active {
 
     >a {
       color: $mobile-menu-background;
-      line-height: 70px;
+      line-height: 77px;
       transition: .3s;
 
       &::after {
         content: '';
         display: block;
         width: 98%;
-        border: 3px solid $yellow;
+        border: 2px solid $yellow;
         background-color: $yellow;
         visibility: hidden;
       }
@@ -147,7 +148,7 @@ body.active {
   }
 
   .logo-container {
-    height: 60px;
+    height: 80px;
   }
 
   .logo-img {

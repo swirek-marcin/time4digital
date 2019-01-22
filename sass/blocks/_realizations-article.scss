@@ -7,6 +7,11 @@
   padding: 30px 0;
   border-bottom: 1px solid $border-realizations;
   margin-bottom: 27px;
+  text-transform: uppercase;
+}
+
+.realizations-article-desktop {
+  display: none;
 }
 
 .realizations-btn-article {
@@ -33,3 +38,24 @@
   }
 }
 
+//Min width 1024px 
+@media all and (min-width: 1024px) {
+  .realizations-flex-container {
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+  .realizations-item-article {
+    width: 32%;
+  }
+
+  .realizations-article-desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .realizations-btn-article {
+    margin-bottom: 70px;
+  }
+}

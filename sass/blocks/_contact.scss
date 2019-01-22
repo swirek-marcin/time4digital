@@ -231,12 +231,13 @@
 
     &-item {
       width: 20%;
+
       a {
         font-size: 8px;
         padding: 0;
         width: 100%;
         text-align: center;
-       }
+      }
     }
   }
 }
@@ -291,5 +292,44 @@
     &-icons {
       margin: 30px 0;
     }
+  }
+}
+
+//Min width 1024px 
+@media all and (min-width:1024px) {
+  .contact-social {
+
+    &-icons {
+      justify-content: center;
+      flex-grow: 1;
+    }
+  }
+
+  .contact-wrapper {
+    display: flex;
+  }
+
+  .contact-map {
+    display: flex;
+    height: 40%;
+    // flex-grow: 1;
+
+    &-hexagon {
+      top: 85%;
+      left: 80%;
+
+      p {
+        top: 30%;
+        right: 130%;
+      }
+    }
+  }
+
+  .contact-address-name {
+    padding-top: 0;
+  }
+
+  .contact-address-item {
+    width: 33%;
   }
 }

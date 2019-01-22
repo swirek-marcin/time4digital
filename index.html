@@ -42,12 +42,14 @@
   </nav>
 
   <header class="hero tabcontent" id="services">
-    <img class="slider slider-img" src="images/hero_480.png" alt="">
+    <img class="slider slider-img" src="images/slider_big.jpg" alt="Slider photo">
     <div class="hero-text-container">
       <h1 class="hero-name">Witold Goj</h1>
       <h2 class="hero-services">Usługi Remontowo Wykończeniowe</h2>
-      <button class="hero-btn-one hero-btn">Zobacz usługi</button>
-      <button class="hero-btn-two hero-btn">Zadzwoń +48 639 852 741</button>
+      <div class="hero-btn-container">
+        <button class="hero-btn-one hero-btn">Zobacz usługi</button>
+        <button class="hero-btn-two hero-btn">Zadzwoń +48 639 852 741</button>
+      </div>
       <p class="hero-paragraph">Zobacz nasze usługi</p>
       <i class="fas fa-angle-down hero-arrow-down"></i>
       <div class="slider-controller-container">
@@ -57,7 +59,7 @@
     </div>
   </header>
   <section class="services">
-    <div class="container services-flex">
+    <div class="services-flex">
       <div class="services-1 services-item"><button class="services-btn-1 services-btn">Malowanie</button></div>
       <div class="services-2 services-item"><button class="services-btn-2 services-btn">Tapetowanie</button></div>
       <div class="services-3 services-item"><button class="services-btn-3 services-btn">Układanie kafelek</button></div>
@@ -67,34 +69,43 @@
   <section class="team">
     <div class="container team-flex">
       <div class="team-item team-item-1"><img src="./images/kowalska_480.png" alt="Team member" class="team-img team-img-1">
-        <h3 class="team-member team-member-1">Joanna Kowalska:</h3>
-        <p class="team-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="team-item-info">
+          <h3 class="team-member team-member-1">Joanna Kowalska:</h3>
+          <p class="team-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
       </div>
       <div class="team-item team-item-2"><img src="./images/tomaszkiewicz_480.png" alt="Team member" class="team-img team-img-2">
-        <h3 class="team-member team-member-2">Wojciech Tomaszkiewicz</h3>
-        <p class="team-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim.</p>
+        <div class="team-item-info">
+          <h3 class="team-member team-member-2">Wojciech Tomaszkiewicz:</h3>
+          <p class="team-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, enim.</p>
+        </div>
       </div>
       <div class="team-item team-item-3"><img src="./images/dobrowolski_480.png" alt="Team member" class="team-img team-img-3">
-        <h3 class="team-member team-member-3">Karol Dobrowolski</h3>
-        <p class="team-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="team-item-info">
+          <h3 class="team-member team-member-3">Karol Dobrowolski:</h3>
+          <p class="team-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
       </div>
+    </div>
     </div>
   </section>
   <section class="realizations">
-    <div class="container">
-      <div class="realizations-text-container">
-        <h1 class="realizations-header">Realizacje</h1>
-        <p class="realizations-paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, corporis! Adipisci accusantium
-          obcaecati necessitatibus.
-        </p>
-      </div>
-      <div class="realizations-controller-container">
-        <div class="realizations-controller-arrows">
-          <i class="fas fa-angle-left"></i>
-          <i class="fas fa-angle-right"></i>
+    <div class="container realizations-container">
+      <div class="realizations-header-container">
+        <div class="realizations-text-container">
+          <h1 class="realizations-header">Realizacje</h1>
+          <p class="realizations-paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, corporis! Adipisci accusantium
+            obcaecati necessitatibus.
+          </p>
         </div>
-        <a href="#" class="realizations-link">Zobacz więcej</a>
+        <div class="realizations-controller-container">
+          <div class="realizations-controller-arrows">
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <a href="#" class="realizations-link">Zobacz więcej</a>
+        </div>
       </div>
       <div class="realizations-flex-container">
         <div class="realizations-item">
@@ -127,8 +138,9 @@
 
   <!-- End tab -->
   <section class="tiles tabcontent" id="start">
+    <h1 class="tiles-header">układanie kafelek</h1>
     <div class="container">
-      <h1 class="tiles-header">układanie kafelek</h1>
+      <!-- <h1 class="tiles-header">układanie kafelek</h1> -->
       <div class="tiles-container">
         <div class="tiles-text-container">
           <h4 class="tiles-subheader">
@@ -192,7 +204,7 @@
 
         <div class="realizations-flex-container">
           <div class="realizations-item realizations-item-article">
-            <img src="./images/bathroom_480.png" alt="Photo" class="realizations-img">
+            <img src="./images/realizations_1.png" alt="Photo" class="realizations-img">
             <div class="realizations-item-text">
               <h3 class="realizations-item-header">Układanie kafelek w domu zdrojowym w Krynicy</h3>
               <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
@@ -201,7 +213,7 @@
             </div>
           </div>
           <div class="realizations-item realizations-item-article">
-            <img src="./images/livingroom_480.png" alt="Photo" class="realizations-img">
+            <img src="./images/realizations_2.png" alt="Photo" class="realizations-img">
             <div class="realizations-item-text">
               <h3 class="realizations-item-header">Tapetowanie w salonie kosmetycznym</h3>
               <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
@@ -210,7 +222,7 @@
             </div>
           </div>
           <div class="realizations-item realizations-item-article">
-            <img src="./images/lamp_480.png" alt="Photo" class="realizations-img">
+            <img src="./images/realizations_3.png" alt="Photo" class="realizations-img">
             <div class="realizations-item-text">
               <h3 class="realizations-item-header">Tapetowanie w restauracji francuskiej</h3>
               <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
@@ -322,34 +334,41 @@
               <div class="contact-social-item"><i class="fab fa-instagram"></i></div>
             </div>
           </div>
-          <div class="contact-navigation">
-            <ul class="contact-menu">
-              <li class="contact-menu-item">
-                <a href="#start" class="contact-menu-item-link tablinks" onclick="openTab(event, 'start')">Strona
-                  główna</a>
-              </li>
-              <li class="contact-menu-item">
-                <a href="#about" class="contact-menu-item-link tablinks" onclick="openTab(event, 'about')">O firmie</a>
-              </li>
-              <li class="contact-menu-item">
-                <a href="#services" class="contact-menu-item-link tablinks" onclick="openTab(event, 'services')">Usługi</a>
-              </li>
-              <li class="contact-menu-item">
-                <a href="#realizations" class="contact-menu-item-link tablinks" onclick="openTab(event, 'realizations')">Realizacje</a>
-              </li>
-              <li class="contact-menu-item">
-                <a href="#contact" class="contact-menu-item-link tablinks" onclick="openTab(event, 'contact')">Kontakt</a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="contact-navigation"> -->
+          <ul class="contact-menu">
+            <li class="contact-menu-item">
+              <a href="#start" class="contact-menu-item-link tablinks" onclick="openTab(event, 'start')">Strona
+                główna</a>
+            </li>
+            <li class="contact-menu-item">
+              <a href="#about" class="contact-menu-item-link tablinks" onclick="openTab(event, 'about')">O firmie</a>
+            </li>
+            <li class="contact-menu-item">
+              <a href="#services" class="contact-menu-item-link tablinks" onclick="openTab(event, 'services')">Usługi</a>
+            </li>
+            <li class="contact-menu-item">
+              <a href="#realizations" class="contact-menu-item-link tablinks" onclick="openTab(event, 'realizations')">Realizacje</a>
+            </li>
+            <li class="contact-menu-item">
+              <a href="#contact" class="contact-menu-item-link tablinks" onclick="openTab(event, 'contact')">Kontakt</a>
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
-        <div class="contact-map">
+        <!-- <div class="contact-map">
           <img src="./images/map_1024.png" alt="Map">
           <div class="contact-map-hexagon">
             <i class="fas fa-arrow-up"></i>
             <p>Do góry</p>
           </div>
-        </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="contact-map">
+      <img src="./images/map_1024.png" alt="Map">
+      <div class="contact-map-hexagon">
+        <i class="fas fa-arrow-up"></i>
+        <p>Do góry</p>
       </div>
     </div>
   </section>

@@ -114,7 +114,6 @@
   display: flex;
   flex-wrap: wrap;
 
-
   &-item {
     display: flex;
     list-style-type: none;
@@ -144,6 +143,7 @@
 
   img {
     filter: grayscale(40);
+    width: 100%;
   }
 
   &-hexagon {
@@ -209,7 +209,6 @@
     justify-content: center;
   }
 
-
   .contact-social {
     display: flex;
     flex-direction: row;
@@ -242,7 +241,7 @@
   }
 }
 
-//Min width 610px 
+//Min width 610px
 @media all and (min-width: 610px) {
   .contact-menu {
     &-item {
@@ -255,7 +254,7 @@
 }
 
 //Min width 768px
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .contact {
     background-color: $black;
     background-image: url(../../images/test.png);
@@ -266,6 +265,10 @@
     &-social {
       padding: 0;
     }
+
+    &-address {
+      justify-content: space-between;
+    }
   }
 
   .contact-address-item {
@@ -273,54 +276,69 @@
     padding-bottom: 0;
   }
 
-
-
   .contact-menu-item {
     a {
       font-size: $font-size-xxs;
     }
   }
 
-  .contact-map {
-    img {
-      width: 100%;
-    }
-  }
+  // .contact-map {
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 
   .contact-social {
-
     &-icons {
       margin: 30px 0;
+    }
+
+    p {
+      padding-left: 0;
     }
   }
 }
 
-//Min width 1024px 
-@media all and (min-width:1024px) {
-  .contact-social {
+//Min width 1024px
+@media all and (min-width: 1024px) {
+  .contact {
+    display: flex;
+    // flex-grow: 1;
 
-    &-icons {
+    &-menu {
+      margin-bottom: 0;
+
+      &-item {
+        a {
+          font-size: $font-size-xxxs;
+          line-height: 50px;
+        }
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      padding-left: 20px;
+    }
+
+    &-social-icons {
       justify-content: center;
       flex-grow: 1;
     }
-  }
 
-  .contact-wrapper {
-    display: flex;
-  }
+    &-map {
+      width: 78%;
+      height: 100%;
+      font-size: 0;
 
-  .contact-map {
-    display: flex;
-    height: 40%;
-    // flex-grow: 1;
+      &-hexagon {
+        top: 85%;
+        left: 80%;
 
-    &-hexagon {
-      top: 85%;
-      left: 80%;
-
-      p {
-        top: 30%;
-        right: 130%;
+        p {
+          top: 30%;
+          right: 130%;
+        }
       }
     }
   }
@@ -331,5 +349,27 @@
 
   .contact-address-item {
     width: 33%;
+    align-items: flex-start;
+  }
+}
+
+//Min width 1384px
+@media all and (min-width: 1384px) {
+  .contact {
+    height: 450px;
+
+    &-map {
+      width: 90%;
+      height: 100%;
+
+      &-hexagon {
+        top: 85%;
+        left: 83%;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
   }
 }

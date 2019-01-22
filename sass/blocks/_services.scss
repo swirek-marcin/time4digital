@@ -16,6 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  background-color: $black;
 }
 
 .services-btn {
@@ -30,22 +31,26 @@
 }
 
 .services-1 {
-  background-image: url(../../images/painting_480.png);
+  // background-image: url(../../images/painting_480.png);
+  background-image: url(../../images/services_1.png);
   // height: 250px;
 }
 
 .services-2 {
-  background-image: url(../../images/scizzors_480.png);
+  // background-image: url(../../images/scizzors_480.png);
+  background-image: url(../../images/services_2.png);
   // height: 250px;
 }
 
 .services-3 {
-  background-image: url(../../images/floor_480.png);
+  // background-image: url(../../images/floor_480.png);
+  background-image: url(../../images/services_3.png);
   // height: 250px;
 }
 
 .services-4 {
-  background-image: url(../../images/panels_480.png);
+  // background-image: url(../../images/panels_480.png);
+  background-image: url(../../images/services_4.png);
   // height: 250px;
 }
 
@@ -74,5 +79,12 @@
 @media all and (min-width:768px) {
   .services-item {
     width: 50%;
+  }
+}
+
+//Min width 1384px
+@media all and (min-width: 1384px) {
+  .services-item {
+    width: 25%;
   }
 }

@@ -100,7 +100,6 @@ body.active {
   
     width: 100%;
     right: 0;
-    // right: calc((100% - 1384px) / 2);
     background-color: transparent;
     height: 80px;
   }
@@ -154,4 +153,13 @@ body.active {
   .logo-img {
     margin-left: 37px;
   }
+}
+
+//Min width 1384px
+@media all and (min-width: 1384px) {
+  .menu {
+    right: calc((100% - 1384px) / 2)
+
+  }
+
 }

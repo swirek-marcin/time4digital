@@ -6,6 +6,16 @@
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  background-color: $black;
+  //dodane
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: relative;
+
+  &-btn-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero-text-container {
@@ -63,9 +73,17 @@
   font-size: $font-size-l;
   color: $white;
 }
+
 .slider-img {
-  width: 100%;
-  height: 490px;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
 }
 
 .slider-controller-icon {
@@ -76,9 +94,7 @@
 //Min width 480px
 
 @media all and (min-width: 480px) {
-  .hero-name {
 
-  }
   .slider-controller {
     width: 47px;
     height: 47px;
@@ -112,13 +128,52 @@
 //Min width 768px;
 @media all and (min-width: 768px) {
   .slider-controller {
-    bottom: 30vh;
+    bottom: 25vh;
+  }
+}
+
+//Min width 784px
+@media all and (min-width: 784px) {
+  .slider-controller {
+    bottom: 20vh;
   }
 }
 
 //Min width 1024px;
 @media all and (min-width: 1024px) {
+  .slider-img {
+    height: calc(100vh - 80px);
+  }
+
+  .hero-text-container {
+    top: 100px;
+  }
+
+  .slider-controller {
+    width: 60px;
+    height: 60px;
+    font-size: $font-size-xxxl;
+  }
+
+  .hero-services {
+    font-size: $font-size-xxxxl;
+  }
+
+  .hero-btn-container {
+    flex-direction: row;
+  }
+
+  .hero-btn {
+    margin-bottom: 180px;
+  }
+
+  .hero-btn-one {
+    margin-right: 5px;
+  }
+
+  .hero-btn-two {
+    margin-left: 5px;
+  }
+
 
 }
-
-

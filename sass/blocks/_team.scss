@@ -70,3 +70,27 @@
     padding: 0 37px;
   }
 }
+
+//min width 1384px
+@media all and (min-width: 1384px) {
+  .team-item {
+    flex-direction: row;
+    height: auto;
+    // margin-top: 80px;
+    // margin-bottom: 80px;
+  }
+
+  .team-item-info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    // justify-content: space-around;
+    text-align: center;
+  }
+
+  .team-paragraph {
+    width: 80%;
+    text-align: justify;
+  }
+}

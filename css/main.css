@@ -309,6 +309,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @media all and (min-width: 1170px) { .team-item { -ms-flex-direction: row; flex-direction: row; height: 200px; margin: 80px auto; }
   .team-item:nth-child(1) { margin-top: 80px; }
+  .team-flex { padding: 0; }
   .team-item-info { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 70%; -ms-flex-align: center; align-items: center; text-align: center; }
   .team-member { width: 80%; text-align: left; }
   .team-paragraph { width: 80%; text-align: justify; } }
@@ -330,6 +331,9 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @media all and (min-width: 768px) { .emergency-container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
   .emergency-phone { padding-bottom: 0; -ms-flex-positive: 1; flex-grow: 1; } }
+
+@media all and (min-width: 1170px) { .emergency-container { -ms-flex-pack: justify; justify-content: space-between; width: 100%; }
+  .emergency-phone { -ms-flex-pack: justify; justify-content: space-between; padding-left: 80px; width: 50%; -ms-flex-positive: initial; flex-grow: initial; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -430,7 +434,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; border: 1px solid red; }
 
 body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; transition: .5s all linear; }
 

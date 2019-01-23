@@ -56,3 +56,18 @@
     flex-grow: 1;
   }
 }
+
+//Min width 1170px
+@media all and (min-width: 1170px) {
+  .emergency-container {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .emergency-phone {
+    justify-content: space-between;
+    padding-left: 80px;
+    width: 50%;
+    flex-grow: initial;
+  }
+}

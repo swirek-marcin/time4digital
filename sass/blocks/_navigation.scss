@@ -157,6 +157,14 @@ body.active {
 //Min width 1384px
 @media all and (min-width: 1384px) {
   .menu {
-    right: calc((100% - 1384px) / 2)
+    right: calc((100% - 1384px) / 2);
+  }
+
+  .logo-img {
+    margin-left: 0;
+  }
+
+  .menu-item:last-child {
+    padding-right: 0;
   }
 }

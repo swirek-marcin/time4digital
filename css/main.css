@@ -207,7 +207,9 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
   .logo-container { height: 80px; }
   .logo-img { margin-left: 37px; } }
 
-@media all and (min-width: 1384px) { .menu { right: calc((100% - 1384px) / 2); } }
+@media all and (min-width: 1384px) { .menu { right: calc((100% - 1384px) / 2); }
+  .logo-img { margin-left: 0; }
+  .menu-item:last-child { padding-right: 0; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 

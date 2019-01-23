@@ -105,9 +105,9 @@
 
 @media all and (min-width: 1024px) { .contact-map { min-width: 50vw; }
   .contact-map-hexagon { left: 89%; }
-  .contact-menu-item a { font-size: 10px; } }
+  .contact-menu-item a { font-size: 9px; } }
 
-@media all and (min-width: 1384px) { .contact { height: 450px; }
+@media all and (min-width: 1170px) { .contact { height: 450px; }
   .contact-map { width: 90%; height: 100%; }
   .contact-map-hexagon { top: 85%; }
   .contact-menu-item a { font-size: 12px; } }
@@ -144,7 +144,7 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 .hero-arrow-down { font-size: 24px; color: #fff; }
 
-.slider-img { position: absolute; min-width: 100%; min-height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.slider-img { position: absolute; min-width: 100%; min-height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 .slider-controller-container { position: absolute; bottom: 10%; left: 20px; right: 20px; display: none; }
 
@@ -163,9 +163,8 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 @media all and (min-width: 1024px) { .slider-controller { width: 60px; height: 60px; font-size: 48px; }
   .hero-services { font-size: 55px; }
-  .hero-btn { margin-bottom: 180px; } }
-
-@media all and (min-width: 1600px) { .hero-btn-container, .hero-text-container { left: calc(50% - 692px); }
+  .hero-btn { margin-bottom: 180px; }
+  .hero-btn-container, .hero-text-container { left: calc(50% - 585px); }
   .hero-text-container { text-align: left; top: 20vh; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
@@ -207,7 +206,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
   .logo-container { height: 80px; }
   .logo-img { margin-left: 37px; } }
 
-@media all and (min-width: 1384px) { .menu { right: calc((100% - 1384px) / 2); }
+@media all and (min-width: 1170px) { .menu { right: calc((100% - 1170px) / 2); }
   .logo-img { margin-left: 0; }
   .menu-item:last-child { padding-right: 0; } }
 
@@ -248,7 +247,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
   .realizations-flex-container { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
   .realizations-item { -ms-flex-direction: column; flex-direction: column; width: 32%; margin: 0; margin-bottom: 41px; } }
 
-@media all and (min-width: 1384px) { .realizations-header-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: start; justify-content: flex-start; }
+@media all and (min-width: 1170px) { .realizations-header-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: start; justify-content: flex-start; }
   .realizations-text-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
   .realizations-controller-container { -ms-flex-direction: column; flex-direction: column; -ms-flex-align: start; align-items: flex-start; }
   .realizations-container { display: -ms-flexbox; display: flex; padding-top: 80px; padding-bottom: 80px; }
@@ -284,7 +283,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @media all and (min-width: 768px) { .services-item { width: 50%; } }
 
-@media all and (min-width: 1384px) { .services-item { width: 25%; } }
+@media all and (min-width: 1170px) { .services-item { width: 25%; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -308,7 +307,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
   .team-item:nth-child(1) { margin-top: 37px; }
   .team-flex { -ms-flex-pack: justify; justify-content: space-between; padding: 0 37px; } }
 
-@media all and (min-width: 1384px) { .team-item { -ms-flex-direction: row; flex-direction: row; height: 200px; margin: 80px auto; }
+@media all and (min-width: 1170px) { .team-item { -ms-flex-direction: row; flex-direction: row; height: 200px; margin: 80px auto; }
   .team-item:nth-child(1) { margin-top: 80px; }
   .team-item-info { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 70%; -ms-flex-align: center; align-items: center; text-align: center; }
   .team-member { width: 80%; text-align: left; }
@@ -345,9 +344,12 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 @media all and (min-width: 768px) { .realizations-btn-article { margin-bottom: 50px; } }
 
 @media all and (min-width: 1024px) { .realizations-flex-container { margin-right: 0; margin-left: 0; }
-  .realizations-item-article { width: 32%; }
+  .realizations-item-article { width: 33%; }
   .realizations-article-desktop { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .realizations-btn-article { margin-bottom: 70px; } }
+  .realizations-btn-article { margin-bottom: 70px; }
+  .tiles-img-container img { min-height: 100%; } }
+
+@media all and (min-width: 1170px) { .realizations-item-article { width: 23%; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -400,7 +402,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .tiles-info-paragraph { padding: 0 15px 36px 15px; color: #737373; font-size: 14px; }
 
-@media all and (min-width: 480px) { .tiles-header { font-size: 30px; text-align: left; padding-left: 5%; }
+@media all and (min-width: 480px) { .tiles-header { font-size: 30px; text-align: left; padding-left: 3%; }
   .tiles-form h3 { width: 80%; }
   .msg-name, .msg-mail, .msg-subject { width: 80%; }
   .msg-input { height: 95px; width: 80%; }
@@ -423,7 +425,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
   .tiles-info-subheader { line-height: 30px; }
   .tiles-info-paragraph { line-height: 30px; } }
 
-@media all and (min-width: 1384px) { .tiles-header { padding-left: calc(50% - (1384px/2)); }
+@media all and (min-width: 1170px) { .tiles-header { padding-left: calc(50% - (1170px/2)); }
   .tiles-container { width: 100%; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
@@ -432,6 +434,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; transition: .5s all linear; }
 
-.container { margin: 0 auto; width: 1384px; max-width: 100%; }
+.container { margin: 0 auto; width: 1170px; max-width: 100%; }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
+/*# sourceMappingURL=main.css.map */

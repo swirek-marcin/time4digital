@@ -124,7 +124,7 @@
   .tiles-header {
     font-size: $font-size-xl;
     text-align: left;
-    padding-left: 5%;
+    padding-left: 3%;
   }
 
   .tiles-form {
@@ -232,12 +232,12 @@
   }
 }
 
-//Min width 1384px
-@media all and (min-width: 1384px) {
+//Min width 1170px
+@media all and (min-width: 1170px) {
   .tiles {
 
     &-header {
-      padding-left: calc(50% - (1384px/2));
+      padding-left: calc(50% - (1170px/2));
     }
 
     &-container {

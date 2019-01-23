@@ -367,6 +367,7 @@
 
 //Min width 1024px
 @media all and (min-width: 1024px) {
+
   .contact-map {
     min-width: 50vw;
 
@@ -377,13 +378,14 @@
 
   .contact-menu-item {
     a {
-      font-size: 10px;
+      font-size: $font-size-xxxxxs;
     }
   }
 }
 
-//Min width 1384px
-@media all and (min-width: 1384px) {
+
+//Min width 1170px
+@media all and (min-width: 1170px) {
   .contact {
     height: 450px;
 

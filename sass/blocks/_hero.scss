@@ -90,7 +90,6 @@
   position: absolute;
   min-width: 100%;
   min-height: 100%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -183,14 +182,10 @@
   .hero-btn {
     margin-bottom: 180px;
   }
-}
-
-//Min width 1600px
-@media all and (min-width: 1600px) {
 
   .hero-btn-container,
   .hero-text-container {
-    left: calc(50% - 692px)
+    left: calc(50% - 585px)
   }
 
   .hero-text-container {

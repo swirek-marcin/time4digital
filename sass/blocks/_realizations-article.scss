@@ -47,7 +47,7 @@
   }
 
   .realizations-item-article {
-    width: 32%;
+    width: 33%;
   }
 
   .realizations-article-desktop {
@@ -58,5 +58,20 @@
 
   .realizations-btn-article {
     margin-bottom: 70px;
+  }
+
+  .tiles-img-container {
+
+    img {
+      // min-width: 100%;
+      min-height: 100%;
+    }
+  }
+}
+
+//Min width 1170px 
+@media all and (min-width: 1170px) {
+  .realizations-item-article {
+    width: 23%;
   }
 }

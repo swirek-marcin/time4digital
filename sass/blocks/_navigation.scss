@@ -154,10 +154,10 @@ body.active {
   }
 }
 
-//Min width 1384px
-@media all and (min-width: 1384px) {
+//Min width 1170px
+@media all and (min-width: 1170px) {
   .menu {
-    right: calc((100% - 1384px) / 2);
+    right: calc((100% - 1170px) / 2);
   }
 
   .logo-img {

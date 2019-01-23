@@ -15,8 +15,8 @@
 .team-item {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
+  text-align: center;
   height: 260px;
   width: 90%;
   border: 1px solid $border-gray;
@@ -50,7 +50,7 @@
   line-height: 25px;
 }
 
-//RWD 
+//RWD =====================================================================
 //Min width 1024px
 @media all and (min-width: 1024px) {
   .team-item {
@@ -75,9 +75,12 @@
 @media all and (min-width: 1384px) {
   .team-item {
     flex-direction: row;
-    height: auto;
-    // margin-top: 80px;
-    // margin-bottom: 80px;
+    height: 200px;
+    margin: 80px auto;
+
+    &:nth-child(1) {
+      margin-top: 80px;
+    }
   }
 
   .team-item-info {
@@ -85,8 +88,12 @@
     flex-direction: column;
     width: 70%;
     align-items: center;
-    // justify-content: space-around;
     text-align: center;
+  }
+
+  .team-member {
+    width: 80%;
+    text-align: left;
   }
 
   .team-paragraph {

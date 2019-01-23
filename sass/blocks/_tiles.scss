@@ -19,7 +19,6 @@
   background-color: $yellow;
   text-align: center;
   margin-bottom: 49px;
-  ////Dodalem
   width: 100%;
 }
 
@@ -35,12 +34,12 @@
   color: $tiles-paragraph;
   line-height: 30px;
 }
-////////////////////////////////
+
 .tiles-img-container {
   display: flex;
   justify-content: center;
 }
-//////////////////////////////
+
 .tiles-img {
   margin: 31px auto;
 }
@@ -119,7 +118,7 @@
   }
 }
 
-//RWD
+//RWD=======================================================================
 //Min width 480px
 @media all and (min-width: 480px) {
   .tiles-header {
@@ -238,7 +237,7 @@
   .tiles {
 
     &-header {
-      padding-left: calc(100vh - 1384px)/2;
+      padding-left: calc(50% - (1384px/2));
     }
 
     &-container {

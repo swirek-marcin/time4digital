@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-//RWD 
+//RWD ======================================================================
 //Min width 768px 
 @media all and (min-width: 768px) {
   .realizations-btn-article {
@@ -45,6 +45,7 @@
     margin-left: 0;
 
   }
+
   .realizations-item-article {
     width: 32%;
   }
@@ -59,5 +60,3 @@
     margin-bottom: 70px;
   }
 }
-
-//Min width 1384px 

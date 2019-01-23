@@ -48,7 +48,6 @@ body.active {
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    // line-height: 25x;
   }
 
   &:first-child {
@@ -97,7 +96,7 @@ body.active {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  
+
     width: 100%;
     right: 0;
     background-color: transparent;
@@ -159,7 +158,5 @@ body.active {
 @media all and (min-width: 1384px) {
   .menu {
     right: calc((100% - 1384px) / 2)
-
   }
-
 }

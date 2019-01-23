@@ -2,6 +2,11 @@
 @import '../variables/colors';
 @import '../variables/fonts';
 
+.realizations {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .realizations-header {
   font-size: $font-size-xl;
   text-transform: uppercase;
@@ -10,7 +15,7 @@
 }
 
 .realizations-text-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -30,7 +35,7 @@
   padding-bottom: 42px;
   padding-top: 34px;
 
-  > a {
+  >a {
     text-decoration: none;
     text-transform: uppercase;
     color: $yellow;
@@ -41,7 +46,7 @@
 .realizations-controller-arrows {
   font-size: $font-size-m;
 
-  > i {
+  >i {
     padding-right: 20px;
   }
 }

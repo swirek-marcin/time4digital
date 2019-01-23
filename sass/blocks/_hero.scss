@@ -7,10 +7,8 @@
   position: relative;
   margin: 0 auto;
   background-color: $black;
-  //dodane
   width: 100%;
   height: calc(100vh - 80px);
-  position: relative;
 
   &-btn-container {
     display: flex;
@@ -22,12 +20,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: center;
   position: absolute;
-  top: 56px;
+  top: 8vh;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hero-btn-container {
+  position: absolute;
+  top: 40vh;
+  left: calc(50% - 150px);
+}
+
+.hero-down-arrow-container {
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 5vh;
 }
 
 .hero-name {
@@ -54,7 +66,7 @@
   border: none;
   font-size: $font-size-xs;
   text-transform: uppercase;
-  font-family: spartan;
+  font-family: $spartan;
   cursor: pointer;
 
   &-one {
@@ -82,15 +94,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
 }
 
-.slider-controller-icon {
+.slider-controller-container {
+  position: absolute;
+  bottom: 10%;
+  left: 20px;
+  right: 20px;
   display: none;
 }
 
-//RWD===================================================================================
+//RWD============================================================================
 //Min width 480px
 
 @media all and (min-width: 480px) {
@@ -99,21 +113,20 @@
     width: 47px;
     height: 47px;
     border: 2px solid $white;
-    position: absolute;
-    bottom: 25px;
     color: $white;
     font-size: $font-size-xl;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &-left {
-      left: 25px;
+    &-container {
+      display: flex;
+      justify-content: space-between;
     }
+  }
 
-    &-right {
-      right: 25px;
-    }
+  .hero-text-container {
+    top: 20vh;
   }
 
   .slider-controller-icon {
@@ -127,44 +140,19 @@
 
 //Min width 768px;
 @media all and (min-width: 768px) {
-  .slider-controller {
-    bottom: 25vh;
-  }
-}
-
-//Min width 784px
-@media all and (min-width: 784px) {
-  .slider-controller {
-    bottom: 20vh;
-  }
-}
-
-//Min width 1024px;
-@media all and (min-width: 1024px) {
-  .slider-img {
-    height: calc(100vh - 80px);
+  .hero-btn-container {
+    flex-direction: row;
+    left: calc(50% - 305px);
+    top: 50vh;
   }
 
   .hero-text-container {
-    top: 100px;
+    width: 60%;
+    left: calc(50% - 30%);
   }
 
-  .slider-controller {
-    width: 60px;
-    height: 60px;
-    font-size: $font-size-xxxl;
-  }
-
-  .hero-services {
-    font-size: $font-size-xxxxl;
-  }
-
-  .hero-btn-container {
-    flex-direction: row;
-  }
-
-  .hero-btn {
-    margin-bottom: 180px;
+  .hero-name {
+    width: 100%;
   }
 
   .hero-btn-one {
@@ -175,5 +163,38 @@
     margin-left: 5px;
   }
 
+  .slider-controller-container {
+    bottom: 48vh;
+  }
+}
 
+//Min width 1024px;
+@media all and (min-width: 1024px) {
+  .slider-controller {
+    width: 60px;
+    height: 60px;
+    font-size: $font-size-xxxl;
+  }
+
+  .hero-services {
+    font-size: $font-size-xxxxl;
+  }
+
+  .hero-btn {
+    margin-bottom: 180px;
+  }
+}
+
+//Min width 1600px
+@media all and (min-width: 1600px) {
+
+  .hero-btn-container,
+  .hero-text-container {
+    left: calc(50% - 692px)
+  }
+
+  .hero-text-container {
+    text-align: left;
+    top: 20vh;
+  }
 }

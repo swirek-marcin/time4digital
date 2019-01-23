@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8">
@@ -46,16 +46,18 @@
     <div class="hero-text-container">
       <h1 class="hero-name">Witold Goj</h1>
       <h2 class="hero-services">Usługi Remontowo Wykończeniowe</h2>
-      <div class="hero-btn-container">
-        <button class="hero-btn-one hero-btn">Zobacz usługi</button>
-        <button class="hero-btn-two hero-btn">Zadzwoń +48 639 852 741</button>
-      </div>
+    </div>
+    <div class="hero-btn-container">
+      <button class="hero-btn-one hero-btn">Zobacz usługi</button>
+      <button class="hero-btn-two hero-btn">Zadzwoń +48 639 852 741</button>
+    </div>
+    <div class="slider-controller-container">
+      <div class="slider-controller-left slider-controller"><i class="fas fa-angle-left slider-controller-icon"></i></div>
+      <div class="slider-controller-right slider-controller"><i class="fas fa-angle-right slider-controller-icon"></i></div>
+    </div>
+    <div class="hero-down-arrow-container">
       <p class="hero-paragraph">Zobacz nasze usługi</p>
       <i class="fas fa-angle-down hero-arrow-down"></i>
-      <div class="slider-controller-container">
-        <div class="slider-controller-left slider-controller"><i class="fas fa-angle-left slider-controller-icon"></i></div>
-        <div class="slider-controller-right slider-controller"><i class="fas fa-angle-right slider-controller-icon"></i></div>
-      </div>
     </div>
   </header>
   <section class="services">
@@ -86,7 +88,6 @@
           <p class="team-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <section class="realizations">
@@ -140,7 +141,6 @@
   <section class="tiles tabcontent" id="start">
     <h1 class="tiles-header">układanie kafelek</h1>
     <div class="container">
-      <!-- <h1 class="tiles-header">układanie kafelek</h1> -->
       <div class="tiles-container">
         <div class="tiles-text-container">
           <h4 class="tiles-subheader">
@@ -156,7 +156,6 @@
             nunc, accumsan congue fusce congue. Integer id erat metus vitae feugiat eget, volutpat a, hendrerit et,
             ultricies a, volutpat quis honc.
           </p>
-          <!-- <img src="images/tiles-bath.png" alt="Photo" class="tiles-img"> -->
           <div class="tiles-img-container">
             <img src="images/tiles-bath-768.png" alt="Photo" class="tiles-img">
           </div>
@@ -171,12 +170,12 @@
           </p>
         </div>
         <div class="tiles-form-container">
-          <form action="" class="tiles-form">
+          <form action="/my-secret-database" method="POST" class="tiles-form">
             <h3>Wyślij wiadomość</h3>
-            <input class="msg-name" type="text" placeholder="Imię i nazwisko" name="ueer_name" id="">
-            <input class="msg-mail" type="text" placeholder="E-mail lub telefon">
-            <input class="msg-subject" type="text" placeholder="Temat">
-            <input class="msg-input" type="text" placeholder="Treść">
+            <input class="msg-name" type="text" placeholder="Imię i nazwisko" name="ueer_name" id="name" required>
+            <input class="msg-mail" type="text" placeholder="E-mail lub telefon" required id="contact" name="user_contact">
+            <input class="msg-subject" type="text" placeholder="Temat" required id="subject" name="user_msg_subject">
+            <input class="msg-input" type="text" placeholder="Treść" required id="msg_text" name="msg_text">
             <button class="form-submit" type="submit">Wyślij</button>
           </form>
           <div class="tiles-info">
@@ -280,6 +279,7 @@
         </div>
         <button class="realizations-btn-article">Zobacz więcej</button>
       </div>
+    </div>
   </section>
 
   <section class="other-services">
@@ -365,7 +365,7 @@
       </div>
     </div>
     <div class="contact-map">
-      <img src="./images/map_1024.png" alt="Map">
+      <img src="./images/map_big.jpg" alt="Map">
       <div class="contact-map-hexagon">
         <i class="fas fa-arrow-up"></i>
         <p>Do góry</p>

@@ -22,14 +22,25 @@
 .emergency-phone {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  font-size: $font-size-s;
+  justify-content: space-evenly;
+  font-size: $font-size-xs;
   padding-bottom: 40px;
   text-transform: uppercase;
 }
 
 .emergency-number {
-  font-size: $font-size-l;
+  font-size: $font-size-xs;
+}
+
+//Min width 480px
+@media all and (min-width: 480px) {
+  .emergency-number {
+    font-size: $font-size-l;
+  }
+
+  .emergency-phone {
+    font-size: $font-size-l;
+  }
 }
 
 //RWD
@@ -37,10 +48,6 @@
 @media all and (min-width: 768px) {
   .emergency-container {
     display: flex;
-    justify-content: space-around;
-  }
-
-  .emergency-phone {
     justify-content: space-around;
   }
 

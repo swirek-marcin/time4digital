@@ -163,6 +163,7 @@
       p {
         position: absolute;
         top: 200%;
+        left: -10%;
         color: $yellow;
         text-align: center;
         text-transform: uppercase;
@@ -346,7 +347,7 @@
 
         p {
           top: 30%;
-          right: 130%;
+          left: -100px;
         }
       }
     }
@@ -390,7 +391,7 @@
     height: 450px;
 
     &-map {
-      width: 90%;
+      max-width: 90%;
       height: 100%;
 
       &-hexagon {

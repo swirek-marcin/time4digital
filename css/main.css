@@ -61,7 +61,7 @@
 
 .contact-map-hexagon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 65px; height: 38px; border: none; background-color: #f8db14; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-.contact-map-hexagon p { position: absolute; top: 200%; color: #f8db14; text-align: center; text-transform: uppercase; font-size: 14px; width: 80px; }
+.contact-map-hexagon p { position: absolute; top: 200%; left: -10%; color: #f8db14; text-align: center; text-transform: uppercase; font-size: 14px; width: 80px; }
 
 .contact-map-hexagon i { z-index: 997; font-size: 23px; }
 
@@ -99,7 +99,7 @@
   .contact-map { min-width: 40vw; max-height: none; font-size: 0; }
   .contact-map img { max-width: none; min-height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
   .contact-map-hexagon { top: 85%; left: 80%; }
-  .contact-map-hexagon p { top: 30%; right: 130%; }
+  .contact-map-hexagon p { top: 30%; left: -100px; }
   .contact-address-name { padding-top: 0; }
   .contact-address-item { width: 33%; -ms-flex-align: start; align-items: flex-start; } }
 
@@ -108,7 +108,7 @@
   .contact-menu-item a { font-size: 9px; } }
 
 @media all and (min-width: 1170px) { .contact { height: 450px; }
-  .contact-map { width: 90%; height: 100%; }
+  .contact-map { max-width: 90%; height: 100%; }
   .contact-map-hexagon { top: 85%; }
   .contact-menu-item a { font-size: 12px; } }
 

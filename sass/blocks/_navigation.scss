@@ -42,7 +42,7 @@ body.active {
   font-size: $font-size-l;
   padding-left: 42px;
   font-family: $spartan;
-  line-height: 80px;
+  line-height: 90px;
 
   >a {
     color: $white;
@@ -92,15 +92,16 @@ body.active {
 //Min width 1024px
 @media all and (min-width:1024px) {
   .menu {
-    position: absolute;
+    position: relative;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-
     width: 100%;
-    right: 0;
+    //Zmiana z absolute na relative
+    // right: 0;
+    // top: 0;
     background-color: transparent;
-    height: 80px;
+    height: 90px;
   }
 
   .menu-item {
@@ -110,11 +111,11 @@ body.active {
     padding-right: 37px;
     padding-left: 0;
     text-align: center;
-    line-height: 20px;
+    // line-height: 20px;
 
     >a {
       color: $mobile-menu-background;
-      line-height: 77px;
+      line-height: 84px;
       transition: .3s;
 
       &::after {
@@ -146,7 +147,9 @@ body.active {
   }
 
   .logo-container {
-    height: 80px;
+    position: absolute;
+    height: 90px;
+
   }
 
   .logo-img {

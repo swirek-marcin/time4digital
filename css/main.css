@@ -161,11 +161,12 @@ footer span { font-size: 12px; color: #7f7f7f; }
   .hero-btn-two { margin-left: 5px; }
   .slider-controller-container { bottom: 48vh; } }
 
-@media all and (min-width: 1024px) { .slider-controller { width: 60px; height: 60px; font-size: 48px; }
+@media all and (min-width: 1024px) { .slider-controller { width: 80px; height: 81px; font-size: 48px; }
   .hero-services { font-size: 55px; }
   .hero-btn { margin-bottom: 180px; }
-  .hero-btn-container, .hero-text-container { left: calc(50% - 585px); }
-  .hero-text-container { text-align: left; top: 20vh; } }
+  .hero-text-container { width: 70%; left: calc(50% - 35%); top: 23vh; } }
+
+@media all and (min-width: 1400px) { .hero-btn-container, .hero-text-container { left: calc(50% - 585px); text-align: left; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -179,7 +180,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .menu.active { right: 0; }
 
-.menu-item { list-style-type: none; text-align: left; font-size: 24px; padding-left: 42px; font-family: Spartan, "Roboto", sans-serif; line-height: 80px; }
+.menu-item { list-style-type: none; text-align: left; font-size: 24px; padding-left: 42px; font-family: Spartan, "Roboto", sans-serif; line-height: 90px; }
 
 .menu-item > a { color: #fff; text-transform: uppercase; text-decoration: none; }
 
@@ -195,15 +196,15 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @media all and (min-width: 480px) { .menu { width: 382px; right: -390px; } }
 
-@media all and (min-width: 1024px) { .menu { position: absolute; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100%; right: 0; background-color: transparent; height: 80px; }
-  .menu-item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; line-height: 20px; }
-  .menu-item > a { color: #2a2a2a; line-height: 77px; transition: .3s; }
+@media all and (min-width: 1024px) { .menu { position: relative; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100%; background-color: transparent; height: 90px; }
+  .menu-item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; }
+  .menu-item > a { color: #2a2a2a; line-height: 84px; transition: .3s; }
   .menu-item > a::after { content: ''; display: block; width: 98%; border: 2px solid #f8db14; background-color: #f8db14; visibility: hidden; }
   .menu-item:hover a { color: #f8db14; cursor: pointer; }
   .menu-item:hover a::after { visibility: visible; }
   .menu-item:first-child { display: none; }
   .hamburger-icon { display: none; }
-  .logo-container { height: 80px; }
+  .logo-container { position: absolute; height: 90px; }
   .logo-img { margin-left: 37px; } }
 
 @media all and (min-width: 1170px) { .menu { right: calc((100% - 1170px) / 2); }
@@ -243,7 +244,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @media all and (min-width: 1024px) { .realizations-header { float: left; padding-top: 60px; }
   .realizations-paragraph { padding-top: 60px; padding-left: 40%; }
-  .realizations-controller-container { padding-bottom: 32px; }
+  .realizations-controller-container { padding-bottom: 32px; width: 100%; }
   .realizations-flex-container { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; margin: 0 auto; -ms-flex-pack: justify; justify-content: space-between; }
   .realizations-item { -ms-flex-direction: column; flex-direction: column; width: 32%; margin: 0; margin-bottom: 41px; } }
 
@@ -303,7 +304,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .team-paragraph { color: #c6c6c6; font-size: 14px; font-family: "Roboto", Spartan, sans-serif; text-align: center; line-height: 25px; }
 
-@media all and (min-width: 1024px) { .team-item { width: 32%; margin: 0; height: 310px; margin-top: 37px; margin-bottom: 37px; }
+@media all and (min-width: 1024px) { .team-item { width: 307px; margin: 0; height: 310px; margin-top: 37px; margin-bottom: 37px; }
   .team-item:nth-child(1) { margin-top: 37px; }
   .team-flex { -ms-flex-pack: justify; justify-content: space-between; padding: 0 37px; } }
 

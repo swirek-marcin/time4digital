@@ -170,8 +170,8 @@
 //Min width 1024px;
 @media all and (min-width: 1024px) {
   .slider-controller {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 81px;
     font-size: $font-size-xxxl;
   }
 
@@ -183,13 +183,19 @@
     margin-bottom: 180px;
   }
 
+  .hero-text-container {
+    width: 70%;
+    left: calc(50% - 35%);
+    top: 23vh;
+    // padding-bottom: 63px;
+  }
+}
+
+//Min width 1400px;
+@media all and (min-width: 1400px) {
   .hero-btn-container,
   .hero-text-container {
-    left: calc(50% - 585px)
-  }
-
-  .hero-text-container {
+    left: calc(50% - 585px);
     text-align: left;
-    top: 20vh;
   }
 }

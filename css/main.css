@@ -120,7 +120,7 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-.hero { overflow: hidden; position: relative; margin: 0 auto; background-color: #000; width: 100%; height: calc(100vh - 80px); }
+.hero { overflow: hidden; position: relative; margin: 0 auto; background-color: #000; width: 100%; height: calc(100vh - 90px); }
 
 .hero-btn-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
@@ -161,7 +161,8 @@ footer span { font-size: 12px; color: #7f7f7f; }
   .hero-btn-two { margin-left: 5px; }
   .slider-controller-container { bottom: 48vh; } }
 
-@media all and (min-width: 1024px) { .slider-controller { width: 80px; height: 81px; font-size: 48px; }
+@media all and (min-width: 1024px) { .hero { height: 678px; }
+  .slider-controller { width: 80px; height: 81px; font-size: 48px; }
   .hero-services { font-size: 55px; }
   .hero-btn { margin-bottom: 180px; }
   .hero-text-container { width: 70%; left: calc(50% - 35%); top: 23vh; } }
@@ -196,10 +197,11 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @media all and (min-width: 480px) { .menu { width: 382px; right: -390px; } }
 
-@media all and (min-width: 1024px) { .menu { position: relative; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; width: 100%; background-color: transparent; height: 90px; }
-  .menu-item { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; }
-  .menu-item > a { color: #2a2a2a; line-height: 84px; transition: .3s; }
-  .menu-item > a::after { content: ''; display: block; width: 98%; border: 2px solid #f8db14; background-color: #f8db14; visibility: hidden; }
+@media all and (min-width: 1024px) { .nav-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
+  .menu { position: static; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; width: 100%; background-color: transparent; height: 90px; }
+  .menu-item { font-size: 13px; padding-right: 37px; padding-left: 0; text-align: center; }
+  .menu-item > a { color: #2a2a2a; transition: .3s; }
+  .menu-item > a::after { content: ''; display: block; width: 98%; height: 3px; border: 1px solid #f8db14; background-color: #f8db14; visibility: hidden; position: relative; top: -5px; }
   .menu-item:hover a { color: #f8db14; cursor: pointer; }
   .menu-item:hover a::after { visibility: visible; }
   .menu-item:first-child { display: none; }
@@ -207,8 +209,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
   .logo-container { position: absolute; height: 90px; }
   .logo-img { margin-left: 37px; } }
 
-@media all and (min-width: 1170px) { .menu { right: calc((100% - 1170px) / 2); }
-  .logo-img { margin-left: 0; }
+@media all and (min-width: 1170px) { .logo-img { margin-left: 0; }
   .menu-item:last-child { padding-right: 0; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
@@ -435,7 +436,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-* { margin: 0; padding: 0; box-sizing: border-box; border: 1px solid red; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; transition: .5s all linear; }
 

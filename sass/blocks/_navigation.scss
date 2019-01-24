@@ -91,11 +91,14 @@ body.active {
 
 //Min width 1024px
 @media all and (min-width:1024px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .menu {
-    position: relative;
+    position: static;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
     width: 100%;
     //Zmiana z absolute na relative
     // right: 0;
@@ -105,26 +108,30 @@ body.active {
   }
 
   .menu-item {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     font-size: $font-size-xxs;
     padding-right: 37px;
     padding-left: 0;
     text-align: center;
     // line-height: 20px;
+    // height: auto;
 
     >a {
       color: $mobile-menu-background;
-      line-height: 84px;
+      // line-height: 90px;
       transition: .3s;
 
       &::after {
         content: '';
         display: block;
         width: 98%;
-        border: 2px solid $yellow;
+        height: 3px;
+        border: 1px solid $yellow;
         background-color: $yellow;
         visibility: hidden;
+        position: relative;
+        top: -5px;
       }
     }
 
@@ -159,9 +166,9 @@ body.active {
 
 //Min width 1170px
 @media all and (min-width: 1170px) {
-  .menu {
-    right: calc((100% - 1170px) / 2);
-  }
+  // .menu {
+  //   right: calc((100% - 1170px) / 2);
+  // }
 
   .logo-img {
     margin-left: 0;

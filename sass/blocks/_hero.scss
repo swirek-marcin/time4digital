@@ -8,7 +8,8 @@
   margin: 0 auto;
   background-color: $black;
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 79vh;
+  // height: 490px;
 
   &-btn-container {
     display: flex;
@@ -17,20 +18,28 @@
 }
 
 .hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -63%);
+  width: 100%;
+}
+
+.hero-header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 8vh;
-  width: 100%;
+  // position: absolute;
+  // top: 8vh;
+  // width: 100%;
   text-align: center;
   text-transform: uppercase;
 }
 
 .hero-btn-container {
-  position: absolute;
-  top: 40vh;
-  left: calc(50% - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-down-arrow-container {
@@ -39,7 +48,8 @@
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 5vh;
+  // bottom: 5vh;
+  bottom: 34px;
 }
 
 .hero-name {
@@ -49,9 +59,10 @@
 }
 
 .hero-services {
-  padding-bottom: 43px;
+  padding-bottom: 10px;
   color: $white;
   font-size: $font-size-xl;
+  line-height: 48px;
 }
 
 .hero-paragraph {
@@ -61,8 +72,6 @@
 }
 
 .hero-btn {
-  width: 300px;
-  height: 54px;
   border: none;
   font-size: $font-size-xs;
   text-transform: uppercase;
@@ -70,14 +79,18 @@
   cursor: pointer;
 
   &-one {
+    width: 300px;
+    height: 54px;
     background-color: $yellow;
     margin-bottom: 15px;
   }
 
   &-two {
+    width: 300px;
+    height: 54px;
     background-color: rgba($black, 0.5);
     color: $yellow;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
   }
 }
 
@@ -97,9 +110,9 @@
 
 .slider-controller-container {
   position: absolute;
-  bottom: 10%;
-  left: 20px;
-  right: 20px;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
   display: none;
 }
 
@@ -124,9 +137,9 @@
     }
   }
 
-  .hero-text-container {
-    top: 20vh;
-  }
+  // .hero-header-container {
+  //   top: 20vh;
+  // }
 
   .slider-controller-icon {
     display: block;
@@ -141,13 +154,6 @@
 @media all and (min-width: 768px) {
   .hero-btn-container {
     flex-direction: row;
-    left: calc(50% - 305px);
-    top: 50vh;
-  }
-
-  .hero-text-container {
-    width: 60%;
-    left: calc(50% - 30%);
   }
 
   .hero-name {
@@ -163,19 +169,24 @@
   }
 
   .slider-controller-container {
-    bottom: 48vh;
+    bottom: calc(50% - 40px);
   }
 }
 
 //Min width 1024px;
 @media all and (min-width: 1024px) {
   .hero {
-    height: 678px;
+    height: 85vh;
   }
+
   .slider-controller {
     width: 80px;
-    height: 81px;
+    height: 80px;
     font-size: $font-size-xxxl;
+  }
+
+  .hero-text-container {
+    width: 80%;
   }
 
   .hero-services {
@@ -186,10 +197,10 @@
     margin-bottom: 180px;
   }
 
-  .hero-text-container {
-    width: 70%;
-    left: calc(50% - 35%);
-    top: 23vh;
+  .hero-header-container {
+    // width: 70%;
+    // left: calc(50% - 35%);
+    // top: 23vh;
     // padding-bottom: 63px;
   }
 }
@@ -197,7 +208,7 @@
 //Min width 1400px;
 @media all and (min-width: 1400px) {
   .hero-btn-container,
-  .hero-text-container {
+  .hero-header-container {
     left: calc(50% - 585px);
     text-align: left;
   }

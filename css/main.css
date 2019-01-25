@@ -120,54 +120,54 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-.hero { overflow: hidden; position: relative; margin: 0 auto; background-color: #000; width: 100%; height: calc(100vh - 90px); }
+.hero { overflow: hidden; position: relative; margin: 0 auto; background-color: #000; width: 100%; height: 79vh; }
 
 .hero-btn-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
-.hero-text-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; position: absolute; top: 8vh; width: 100%; text-align: center; text-transform: uppercase; }
+.hero-text-container { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -63%); width: 100%; }
 
-.hero-btn-container { position: absolute; top: 40vh; left: calc(50% - 150px); }
+.hero-header-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; text-align: center; text-transform: uppercase; }
 
-.hero-down-arrow-container { text-transform: uppercase; position: absolute; left: 0; right: 0; text-align: center; bottom: 5vh; }
+.hero-btn-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+
+.hero-down-arrow-container { text-transform: uppercase; position: absolute; left: 0; right: 0; text-align: center; bottom: 34px; }
 
 .hero-name { color: #d8d8d8; font-size: 24px; line-height: 48px; }
 
-.hero-services { padding-bottom: 43px; color: #fff; font-size: 30px; }
+.hero-services { padding-bottom: 10px; color: #fff; font-size: 30px; line-height: 48px; }
 
 .hero-paragraph { font-size: 14px; color: #fff; padding-bottom: 20px; }
 
-.hero-btn { width: 300px; height: 54px; border: none; font-size: 14px; text-transform: uppercase; font-family: Spartan, "Roboto", sans-serif; cursor: pointer; }
+.hero-btn { border: none; font-size: 14px; text-transform: uppercase; font-family: Spartan, "Roboto", sans-serif; cursor: pointer; }
 
-.hero-btn-one { background-color: #f8db14; margin-bottom: 15px; }
+.hero-btn-one { width: 300px; height: 54px; background-color: #f8db14; margin-bottom: 15px; }
 
-.hero-btn-two { background-color: rgba(0, 0, 0, 0.5); color: #f8db14; margin-bottom: 35px; }
+.hero-btn-two { width: 300px; height: 54px; background-color: rgba(0, 0, 0, 0.5); color: #f8db14; }
 
 .hero-arrow-down { font-size: 24px; color: #fff; }
 
 .slider-img { position: absolute; min-width: 100%; min-height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-.slider-controller-container { position: absolute; bottom: 10%; left: 20px; right: 20px; display: none; }
+.slider-controller-container { position: absolute; bottom: 25px; left: 25px; right: 25px; display: none; }
 
 @media all and (min-width: 480px) { .slider-controller { width: 47px; height: 47px; border: 2px solid #fff; color: #fff; font-size: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
   .slider-controller-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
-  .hero-text-container { top: 20vh; }
   .slider-controller-icon { display: block; }
   .hero-services { font-size: 36px; } }
 
-@media all and (min-width: 768px) { .hero-btn-container { -ms-flex-direction: row; flex-direction: row; left: calc(50% - 305px); top: 50vh; }
-  .hero-text-container { width: 60%; left: calc(50% - 30%); }
+@media all and (min-width: 768px) { .hero-btn-container { -ms-flex-direction: row; flex-direction: row; }
   .hero-name { width: 100%; }
   .hero-btn-one { margin-right: 5px; }
   .hero-btn-two { margin-left: 5px; }
-  .slider-controller-container { bottom: 48vh; } }
+  .slider-controller-container { bottom: calc(50% - 40px); } }
 
-@media all and (min-width: 1024px) { .hero { height: 678px; }
-  .slider-controller { width: 80px; height: 81px; font-size: 48px; }
+@media all and (min-width: 1024px) { .hero { height: 85vh; }
+  .slider-controller { width: 80px; height: 80px; font-size: 48px; }
+  .hero-text-container { width: 80%; }
   .hero-services { font-size: 55px; }
-  .hero-btn { margin-bottom: 180px; }
-  .hero-text-container { width: 70%; left: calc(50% - 35%); top: 23vh; } }
+  .hero-btn { margin-bottom: 180px; } }
 
-@media all and (min-width: 1400px) { .hero-btn-container, .hero-text-container { left: calc(50% - 585px); text-align: left; } }
+@media all and (min-width: 1400px) { .hero-btn-container, .hero-header-container { left: calc(50% - 585px); text-align: left; } }
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
@@ -187,7 +187,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .menu-item:first-child { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 14px; color: #797979; }
 
-.hamburger { position: absolute; top: 30px; right: 24px; font-size: 18px; color: #4d4d4d; }
+.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; }
 
 .hamburger-icon.active { display: none; }
 

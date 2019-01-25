@@ -2,10 +2,6 @@
 @import '../variables/colors';
 @import '../variables/fonts';
 
-.services {
-  margin-top: -6px;
-}
-
 .services-flex {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +22,6 @@
   font-family: $spartan;
   color: $yellow;
   font-size: $font-size-l;
-  margin: 90px auto;
   cursor: pointer;
 }
 
@@ -47,23 +42,22 @@
 }
 
 .services-btn-1 {
-  width: 200px;
+  width: 199px;
   height: 70px;
+  margin: 90px auto;
 }
 
 .services-btn-2 {
-  width: 200px;
+  width: 221px;
   height: 70px;
+  margin: 90px auto;
 }
 
-.services-btn-3 {
-  width: 200px;
-  height: 70px;
-}
-
+.services-btn-3,
 .services-btn-4 {
-  width: 200px;
-  height: 70px;
+  width: 192px;
+  height: 110px;
+  margin: 70px auto;
 }
 
 //RWD====================================================================

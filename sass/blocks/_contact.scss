@@ -3,24 +3,31 @@
 @import '../variables/fonts';
 
 .contact {
+  // padding-left: 25px;
+  // padding-right: 25px;
   background-color: $black;
   background-image: url(../../images/logo_big.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
-  background-position-y: 70%;
+  background-position-y: 60%;
+
+  &-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
   &-container {
-    width: 90%;
     margin: 0 auto;
   }
 
   &-logo-img {
     padding-top: 43px;
-    margin: 0 auto 40px;
+    padding-bottom: 40px;
   }
 
   &-logo {
     border-bottom: 1px solid $contact-after;
+    font-size: 0;
   }
 
   &-address {
@@ -40,7 +47,7 @@
     &-name {
       padding-top: 28px;
 
-      span {
+      h5 {
         font-size: $font-size-s;
         font-family: $roboto;
         text-transform: uppercase;
@@ -62,10 +69,10 @@
     flex-direction: column;
 
     p {
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
       text-transform: uppercase;
       color: $text-contact-social;
-      padding: 28px;
+      padding: 40px;
       text-align: center;
     }
 
@@ -79,8 +86,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50px;
-      height: 28px;
+      width: 44px;
+      height: 25px;
       border: none;
       background-color: $yellow;
       position: relative;
@@ -139,20 +146,22 @@
     overflow: hidden;
     max-height: 300px;
     position: relative;
+    // padding: 0;
 
     img {
       filter: grayscale(40);
       height: auto;
       max-width: 100%;
       display: block;
+      // padding: 0;
     }
 
     &-hexagon {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 65px;
-      height: 38px;
+      width: 55px;
+      height: 31px;
       border: none;
       background-color: $yellow;
       position: absolute;
@@ -200,8 +209,8 @@
 //Min width 480px
 @media all and (min-width: 480px) {
   .contact {
-    background-position-x: 110%;
-    background-position-y: 10%;
+    background-position-x: 140%;
+    background-position-y: -60%;
 
     &-logo {
       text-align: left;
@@ -212,7 +221,12 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 20px 0;
+      // padding: 20px 0;
+
+      p {
+        text-align: left;
+        padding-left: 0;
+      }
 
       &-item {
         margin: 22px 14px;
@@ -223,17 +237,23 @@
       }
     }
 
+    &-map {
+      padding: 0;
+    }
+
     &-menu {
       justify-content: space-between;
 
       &-item {
-        width: 20%;
+        // width: 20%;
+        width: auto;
 
         a {
-          font-size: 8px;
+          font-size: 12px;
           padding: 0;
           width: 100%;
-          text-align: center;
+          line-height: 60px;
+          // text-align: right;
         }
       }
     }
@@ -244,8 +264,13 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        align-items: center;
-        justify-content: center;
+        flex-grow: 1;
+        align-items: flex-start;
+        // justify-content: center;
+      }
+
+      &-id {
+        padding-top: 50px;
       }
     }
   }

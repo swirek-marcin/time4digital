@@ -13,13 +13,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-.contact { background-color: #000; background-image: url(../../images/logo_big.png); background-repeat: no-repeat; background-position-x: 90%; background-position-y: 70%; }
+.contact { background-color: #000; background-image: url(../../images/logo_big.png); background-repeat: no-repeat; background-position-x: 90%; background-position-y: 60%; }
 
-.contact-container { width: 90%; margin: 0 auto; }
+.contact-wrapper { padding-left: 25px; padding-right: 25px; }
 
-.contact-logo-img { padding-top: 43px; margin: 0 auto 40px; }
+.contact-container { margin: 0 auto; }
 
-.contact-logo { border-bottom: 1px solid #1e1e1e; }
+.contact-logo-img { padding-top: 43px; padding-bottom: 40px; }
+
+.contact-logo { border-bottom: 1px solid #1e1e1e; font-size: 0; }
 
 .contact-address { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; text-align: center; color: #808080; font-family: "Roboto", Spartan, sans-serif; border-bottom: 1px solid #1e1e1e; }
 
@@ -27,17 +29,17 @@
 
 .contact-address-name { padding-top: 28px; }
 
-.contact-address-name span { font-size: 18px; font-family: "Roboto", Spartan, sans-serif; text-transform: uppercase; color: #808080; font-weight: 700; }
+.contact-address-name h5 { font-size: 18px; font-family: "Roboto", Spartan, sans-serif; text-transform: uppercase; color: #808080; font-weight: 700; }
 
 .contact-address-mail span { color: #f8db14; }
 
 .contact-social { border-bottom: 1px solid #1e1e1e; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
-.contact-social p { font-size: 14px; text-transform: uppercase; color: #666666; padding: 28px; text-align: center; }
+.contact-social p { font-size: 13px; text-transform: uppercase; color: #666666; padding: 40px; text-align: center; }
 
 .contact-social-icons { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding-bottom: 54px; }
 
-.contact-social-item { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 50px; height: 28px; border: none; background-color: #f8db14; position: relative; }
+.contact-social-item { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 44px; height: 25px; border: none; background-color: #f8db14; position: relative; }
 
 .contact-social-item::before, .contact-social-item::after { content: ''; width: 100%; height: 100%; background-color: #f8db14; position: absolute; }
 
@@ -59,7 +61,7 @@
 
 .contact-map img { filter: grayscale(40); height: auto; max-width: 100%; display: block; }
 
-.contact-map-hexagon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 65px; height: 38px; border: none; background-color: #f8db14; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.contact-map-hexagon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 55px; height: 31px; border: none; background-color: #f8db14; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 .contact-map-hexagon p { position: absolute; top: 200%; left: -10%; color: #f8db14; text-align: center; text-transform: uppercase; font-size: 14px; width: 80px; }
 
@@ -71,15 +73,18 @@
 
 .contact-map-hexagon::after { transform: rotate(-60deg); }
 
-@media all and (min-width: 480px) { .contact { background-position-x: 110%; background-position-y: 10%; }
+@media all and (min-width: 480px) { .contact { background-position-x: 140%; background-position-y: -60%; }
   .contact-logo { text-align: left; }
-  .contact-social { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; padding: 20px 0; }
+  .contact-social { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
+  .contact-social p { text-align: left; padding-left: 0; }
   .contact-social-item { margin: 22px 14px; }
   .contact-social-icons { padding-bottom: 0; }
+  .contact-map { padding: 0; }
   .contact-menu { -ms-flex-pack: justify; justify-content: space-between; }
-  .contact-menu-item { width: 20%; }
-  .contact-menu-item a { font-size: 8px; padding: 0; width: 100%; text-align: center; }
-  .contact-address-item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 50%; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; } }
+  .contact-menu-item { width: auto; }
+  .contact-menu-item a { font-size: 12px; padding: 0; width: 100%; line-height: 60px; }
+  .contact-address-item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 50%; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-align: start; align-items: flex-start; }
+  .contact-address-id { padding-top: 50px; } }
 
 @media all and (min-width: 610px) { .contact-menu-item a { font-size: 11px; line-height: 70px; } }
 
@@ -431,7 +436,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 @font-face { font-family: Spartan; src: url(../../fonts/leaguespartan-bold.woff); }
 
-* { margin: 0; padding: 0; box-sizing: border-box; border: 1px solid red; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; transition: .5s all linear; }
 

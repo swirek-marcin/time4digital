@@ -294,6 +294,12 @@
     background-position-x: -300px;
     background-position-y: -100px;
 
+    &-map {
+      img {
+        width: 100%;
+      }
+    }
+
     &-menu {
 
       &-item {
@@ -327,18 +333,23 @@
   }
 }
 
-//Min width 950px
-@media all and (min-width: 950px) {
+//Min width 1024px
+@media all and (min-width: 1024px) {
   .contact {
     display: flex;
+
+    &-container {
+      width: 100%;
+    }
 
     &-menu {
       margin-bottom: 0;
 
       &-item {
         a {
-          font-size: $font-size-xxxxs;
-          line-height: 50px;
+          line-height: 0;
+          padding-top: 33px;
+          padding-bottom: 57px;
         }
       }
     }
@@ -359,6 +370,7 @@
       font-size: 0;
 
       img {
+        width: auto;
         max-width: none;
         min-height: 100%;
         position: absolute;
@@ -368,11 +380,11 @@
       }
 
       &-hexagon {
-        top: 85%;
-        left: 80%;
+        top: 28vh;
+        left: 85%;
 
         p {
-          top: 30%;
+          top: 1vh;
           left: -100px;
         }
       }
@@ -382,34 +394,20 @@
 
       &-name {
         padding-top: 0;
+
+        h5 {
+          font-size: $font-size-xs;
+        }
       }
 
       &-item {
         width: 33%;
         align-items: flex-start;
+        padding: 35px 0;
       }
     }
   }
 }
-
-//Min width 1024px
-@media all and (min-width: 1024px) {
-
-  .contact-map {
-    min-width: 50vw;
-
-    &-hexagon {
-      left: 89%;
-    }
-  }
-
-  .contact-menu-item {
-    a {
-      font-size: $font-size-xxxxxs;
-    }
-  }
-}
-
 
 //Min width 1170px
 @media all and (min-width: 1170px) {
@@ -421,7 +419,7 @@
       height: 100%;
 
       &-hexagon {
-        top: 85%;
+        top: 28vh;
       }
     }
 
@@ -430,5 +428,14 @@
         font-size: $font-size-xxxs;
       }
     }
+  }
+}
+
+//Min width 1480px
+@media all and (min-width: 1480px) {
+  .contact-wrapper {
+    position: absolute;
+    padding-left: calc(50% - 585px);
+    width: 60vw;
   }
 }

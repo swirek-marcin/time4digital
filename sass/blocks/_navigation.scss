@@ -95,6 +95,7 @@ body.active {
     display: flex;
     justify-content: space-between;
   }
+
   .menu {
     position: static;
     flex-direction: row;
@@ -169,6 +170,13 @@ body.active {
   // .menu {
   //   right: calc((100% - 1170px) / 2);
   // }
+
+  .menu-item {
+
+    a {
+      font-size: $afont-size-s;
+    }
+  }
 
   .logo-img {
     margin-left: 0;

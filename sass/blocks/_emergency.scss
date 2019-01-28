@@ -18,6 +18,7 @@
   font-size: $font-size-s;
   padding: 30px 0 27px 0;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .emergency-phone {
@@ -35,7 +36,6 @@
 
 //Min width 480px
 @media all and (min-width: 480px) {
-
 }
 
 //RWD
@@ -52,17 +52,41 @@
   }
 }
 
-//Min width 1170px
-@media all and (min-width: 1170px) {
+//Min width 1024px
+@media all and (min-width: 1024px) {
+  .emergency-header {
+    font-size: $font-size-m;
+    line-height: 100px;
+    padding: 0;
+  }
+
+  .emergency-phone {
+    justify-content: space-between;
+    padding-left: 74px;
+  }
+
   .emergency-container {
     justify-content: space-between;
     width: 100%;
+    padding: 0 25px;
   }
+}
 
+//Min width 1170px
+@media all and (min-width: 1170px) {
   .emergency-phone {
     justify-content: space-between;
     padding-left: 80px;
     width: 50%;
     flex-grow: initial;
+  }
+
+  .emergency-container {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .emergency-header {
+    margin: 0;
   }
 }

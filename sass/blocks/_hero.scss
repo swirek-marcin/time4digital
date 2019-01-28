@@ -186,7 +186,7 @@
 //Min width 1024px;
 @media all and (min-width: 1024px) {
   .hero {
-    height: 85vh;
+    height: 100vh;
   }
 
   .slider-controller {
@@ -197,10 +197,12 @@
 
   .hero-text-container {
     width: 80%;
+    transform: translate(-50%, -35%);
   }
 
   .hero-services {
     font-size: $font-size-xxxxl;
+    line-height: 80px;
   }
 
   .hero-btn {
@@ -209,11 +211,31 @@
 }
 
 //Min width 1400px;
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1480px) {
 
-  .hero-btn-container,
-  .hero-header-container {
+  .hero {
+    height: calc(100vh - 90px);
+  }
+
+  .hero-text-container {
     left: calc(50% - 585px);
+    transform: translate(0%, -41%);
+    width: 50%;
+  }
+
+  .hero-btn-container {
+    justify-content: flex-start;
+  }
+
+  .hero-name {
+    width: 100%;
+  }
+
+  .hero-header-container {
     text-align: left;
+  }
+
+  .hero-services {
+    padding-bottom: 50px;
   }
 }

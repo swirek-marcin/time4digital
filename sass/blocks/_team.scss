@@ -108,3 +108,15 @@
     text-align: justify;
   }
 }
+
+//Min width 1480px
+@media all and (min-width:1480px) {
+  .team-item {
+    margin: 80px auto;
+    width: 31%;
+  }
+
+  .team-flex {
+    padding: 0 10%;
+  }
+}

@@ -86,15 +86,13 @@
   .contact-address-item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; width: 50%; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-align: start; align-items: flex-start; }
   .contact-address-id { padding-top: 50px; } }
 
-@media all and (min-width: 610px) { .contact-menu-item a { font-size: 11px; line-height: 70px; } }
-
 @media all and (min-width: 768px) { .contact { background-position-x: -300px; background-position-y: -100px; }
   .contact-menu-item a { font-size: 13px; }
   .contact-social { padding: 0; }
-  .contact-social-icons { margin: 30px 0; }
+  .contact-social-icons { margin: 25px 0; }
   .contact-social p { padding-left: 0; }
   .contact-address { -ms-flex-pack: justify; justify-content: space-between; }
-  .contact-address-item { width: 30%; padding-bottom: 0; } }
+  .contact-address-item { width: 30%; padding: 20px 0; } }
 
 @media all and (min-width: 950px) { .contact { display: -ms-flexbox; display: flex; }
   .contact-menu { margin-bottom: 0; }
@@ -160,10 +158,11 @@ footer span { font-size: 12px; color: #7f7f7f; }
   .slider-controller-icon { display: block; }
   .hero-services { font-size: 36px; } }
 
-@media all and (min-width: 768px) { .hero-btn-container { -ms-flex-direction: row; flex-direction: row; }
-  .hero-name { width: 100%; }
-  .hero-btn-one { margin-right: 5px; }
-  .hero-btn-two { margin-left: 5px; }
+@media all and (min-width: 768px) { .hero-btn-container { -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; }
+  .hero-name { line-height: 80px; }
+  .hero-services { font-size: 48px; line-height: 65px; padding-bottom: 30px; }
+  .hero-btn-one { margin-right: 5px; width: 200px; margin-bottom: 0; }
+  .hero-btn-two { margin-left: 5px; width: 260px; }
   .slider-controller-container { bottom: calc(50% - 40px); } }
 
 @media all and (min-width: 1024px) { .hero { height: 85vh; }
@@ -247,8 +246,9 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .realizations-item-text { width: 87%; margin: 0 auto; padding: 30px 0; }
 
-@media all and (min-width: 768px) { .realizations-item { display: -ms-flexbox; display: flex; width: 90%; }
-  .realizations-item-text { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; } }
+@media all and (min-width: 768px) { .realizations-item { display: -ms-flexbox; display: flex; }
+  .realizations-controller-container { padding: 25px 0; }
+  .realizations-item-text { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding: 30px 20px; width: 100%; } }
 
 @media all and (min-width: 1024px) { .realizations-header { float: left; padding-top: 60px; }
   .realizations-paragraph { padding-top: 60px; padding-left: 40%; }

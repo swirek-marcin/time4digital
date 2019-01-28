@@ -93,12 +93,18 @@
 @media all and (min-width: 768px) {
   .realizations-item {
     display: flex;
-    width: 90%;
+    // width: 90%;
+  }
+
+  .realizations-controller-container {
+    padding: 25px 0;
   }
 
   .realizations-item-text {
     display: flex;
     flex-direction: column;
+    padding: 30px 20px;
+    width: 100%;
   }
 }
 

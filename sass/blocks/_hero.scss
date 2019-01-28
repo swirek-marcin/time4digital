@@ -154,18 +154,28 @@
 @media all and (min-width: 768px) {
   .hero-btn-container {
     flex-direction: row;
+    justify-content: center;
   }
 
   .hero-name {
-    width: 100%;
+    line-height: 80px;
+  }
+
+  .hero-services {
+    font-size: $font-size-xxxl;
+    line-height: 65px;
+    padding-bottom: 30px;
   }
 
   .hero-btn-one {
     margin-right: 5px;
+    width: 200px;
+    margin-bottom: 0;
   }
 
   .hero-btn-two {
     margin-left: 5px;
+    width: 260px;
   }
 
   .slider-controller-container {
@@ -200,6 +210,7 @@
 
 //Min width 1400px;
 @media all and (min-width: 1400px) {
+
   .hero-btn-container,
   .hero-header-container {
     left: calc(50% - 585px);

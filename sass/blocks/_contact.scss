@@ -3,8 +3,7 @@
 @import '../variables/fonts';
 
 .contact {
-  // padding-left: 25px;
-  // padding-right: 25px;
+
   background-color: $black;
   background-image: url(../../images/logo_big.png);
   background-repeat: no-repeat;
@@ -153,7 +152,6 @@
       height: auto;
       max-width: 100%;
       display: block;
-      // padding: 0;
     }
 
     &-hexagon {
@@ -221,7 +219,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      // padding: 20px 0;
 
       p {
         text-align: left;
@@ -245,7 +242,6 @@
       justify-content: space-between;
 
       &-item {
-        // width: 20%;
         width: auto;
 
         a {
@@ -253,7 +249,6 @@
           padding: 0;
           width: 100%;
           line-height: 60px;
-          // text-align: right;
         }
       }
     }
@@ -266,7 +261,6 @@
         width: 50%;
         flex-grow: 1;
         align-items: flex-start;
-        // justify-content: center;
       }
 
       &-id {
@@ -275,18 +269,6 @@
     }
   }
 }
-
-//Min width 610px
-// @media all and (min-width: 610px) {
-//   .contact-menu {
-//     &-item {
-//       a {
-//         font-size: 11px;
-//         line-height: 70px;
-//       }
-//     }
-//   }
-// }
 
 //Min width 768px
 @media all and (min-width: 768px) {
@@ -327,7 +309,6 @@
       &-item {
         width: 30%;
         padding: 20px 0;
-        // align-items: center;
       }
     }
   }
@@ -380,8 +361,10 @@
       }
 
       &-hexagon {
-        top: 28vh;
-        left: 85%;
+        top: auto;
+        left: auto;
+        bottom: 50px;
+        right: 20px;
 
         p {
           top: 1vh;
@@ -417,10 +400,6 @@
     &-map {
       max-width: 90%;
       height: 100%;
-
-      &-hexagon {
-        top: 28vh;
-      }
     }
 
     &-menu-item {

@@ -13,32 +13,37 @@
 
 <body class="rwd">
   <nav class="navigation" id="nav-bar">
-    <div class="container nav-container">
-      <div class="logo-container"><img class="logo-img" src="../images/logo_480.png" alt="Logo">
+    <div class="container">
+      <div class="navigation-container">
+        <div class="logo-container">
+          <img class="logo-img" src="../images/logo_480.png" alt="Logo" />
+        </div>
+        <ul class="rwd menu">
+          <li class="menu-item">
+            <i class="fas fa-angle-left menu-controller-icon hamburger-icon rwd active"></i>
+            <p class="hamburger-icon">Wróć</p>
+          </li>
+          <li class="menu-item">
+            <a href="../index.html" class="menu-item-link tablinks" onclick="openTab(event, 'main')">Strona główna</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item-link">O firmie</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item-link">Usługi</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-item-link tablinks" onclick="openTab(event, 'portfolio')">Realizacje</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contact" class="menu-item-link">Kontakt</a>
+          </li>
+        </ul>
       </div>
-      <ul class="rwd menu">
-        <li class="menu-item">
-          <i class="fas fa-angle-left menu-controller-icon hamburger-icon rwd active"></i>
-          <p class="hamburger-icon">Wróć</p>
-        </li>
-        <li class="menu-item">
-          <a href="../index.html" class="menu-item-link">Strona główna</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">O firmie</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="menu-item-link">Usługi</a>
-        </li>
-        <li class="menu-item">
-          <a href="#realizations" class="menu-item-link">Realizacje</a>
-        </li>
-        <li class="menu-item">
-          <a href="#contact" class="menu-item-link">Kontakt</a>
-        </li>
-      </ul>
     </div>
-    <div class="hamburger"><i class="fas fa-bars hamburger-icon rwd"></i></div>
+    <div class="hamburger">
+      <i class="fas fa-bars hamburger-icon rwd"></i>
+    </div>
   </nav>
 
   <section class="tiles">
@@ -106,80 +111,86 @@
     <div class="container">
       <div class="realizations-text-container">
         <h1 class="realizations-header-article">Realizacje</h1>
-        <div class="realizations-flex-container">
-          <div class="realizations-item realizations-item-article">
-            <img src="../images/realizations_1.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Układanie kafelek w domu zdrojowym w Krynicy</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+        <div class="realizations-article-flex">
+          <div class="realizations-article-item">
+            <div class="realizations-article-img-container"><img src="../images/realizations_1.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Układanie kafelek w domu zdrojowym w Krynicy
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <div class="realizations-item realizations-item-article">
-            <img src="../images/realizations_2.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Tapetowanie w salonie kosmetycznym</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item">
+            <div class="realizations-article-img-container"><img src="../images/realizations_2.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Tapetowanie w salonie kosmetycznym
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <div class="realizations-item realizations-item-article">
-            <img src="../images/realizations_3.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Tapetowanie w restauracji francuskiej</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item">
+            <div class="realizations-article-img-container"><img src="../images/realizations_3.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Tapetowanie w restauracji francuskiej
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <!-- <div class="realizations-article-desktop"> -->
-          <div class="realizations-item realizations-item-article realizations-article-desktop">
-            <img src="../images/realizations_4.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Układanie kafelek w gospodzie u Babci Maliny</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item realizations-article-desktop">
+            <div class="realizations-article-img-container"><img src="../images/realizations_4.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Układanie kafelek w gospodzie u Babci Maliny
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <div class="realizations-item realizations-item-article realizations-article-desktop">
-            <img src="../images/realizations_5.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Tapetowanie w salonie kosmetycznym</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item realizations-article-desktop">
+            <div class="realizations-article-img-container"><img src="../images/realizations_5.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Układanie kafelek w domu zdrojowym w Krynicy
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <div class="realizations-item realizations-item-article realizations-article-desktop">
-            <img src="../images/realizations_6.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Tapetowanie w restauracji francuskiej</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item realizations-article-desktop">
+            <div class="realizations-article-img-container"><img src="../images/realizations_6.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Układanie kafelek w salonie kosmetycznym
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <div class="realizations-item realizations-item-article realizations-article-desktop">
-            <img src="../images/realizations_7.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Układanie kafelek w domu zdrojowym w Krynicy</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item realizations-article-desktop">
+            <div class="realizations-article-img-container"><img src="../images/realizations_7.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Układanie kafelek w restauracji francuskiej
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
           </div>
-          <div class="realizations-item realizations-item-article realizations-article-desktop">
-            <img src="../images/realizations_8.png" alt="Photo" class="realizations-img">
-            <div class="realizations-item-text">
-              <h3 class="realizations-item-header">Układanie kafelek w gospodzie u Babci Maliny</h3>
-              <p class="realizations-item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                facere
-                nesciunt modi consequatur suscipit nemo error soluta, numquam dolores?</p>
+          <div class="realizations-article-item realizations-article-desktop">
+            <div class="realizations-article-img-container"><img src="../images/realizations_8.png" alt="Photo" class="realizations-article-img"></div>
+            <div class="realizations-article-text">
+              <h3 class="realizations-article-header">
+                Układanie kafelek w gospodzie u Babci Maliny
+              </h3>
+              <p class="realizations-article-paragraph">Mauris nec malesuada fames ac turpis scing wisi. Integer sapien
+                massa ac turpis faucibus.</p>
             </div>
-            <!-- </div> -->
           </div>
         </div>
         <button class="realizations-btn-article">Zobacz więcej</button>
@@ -191,9 +202,9 @@
     <div class="container">
       <h2 class="other-services-header">Zobacz pozostałe usługi</h2>
       <div class="other-services-btn-container">
-        <button class="other-services-btn">Malowanie</button>
-        <button class="other-services-btn">Tapetowanie</button>
-        <button class="other-services-btn">Układanie paneli</button>
+        <button class="other-services-btn other-services-btn-1">Malowanie</button>
+        <button class="other-services-btn other-services-btn-2">Tapetowanie</button>
+        <button class="other-services-btn other-services-btn-3">Układanie paneli</button>
       </div>
     </div>
   </section>
@@ -201,75 +212,86 @@
   <section class="emergency">
     <div class="container">
       <div class="emergency-container">
-        <h4 class="emergency-header">
-          Nagły wypadek?<br>Potrzebujesz szybkiej pomocy?
-        </h4>
+        <div class="emergency-header-container">
+          <p class="emergency-header">
+            Nagły wypadek?
+          </p>
+          <p class="emergency-header">Potrzebujesz szybkiej pomocy?</p>
+        </div>
         <p class="emergency-phone">
-          Zadzwoń<img class="emergency-phone-img" src="../images/phone.png" alt="Phone"><span class="emergency-number">+48
+          Zadzwoń<img class="emergency-phone-img" src="../images/phone.png" alt="Phone" /><span class="emergency-number">+48
             639 852 741</span>
         </p>
       </div>
     </div>
   </section>
+
   <section class="contact">
     <div class="container">
       <div class="contact-wrapper">
         <div class="contact-container">
           <div class="contact-logo">
-            <img src="../images/logo_white.png" alt="Logo" class="contact-logo-img">
+            <img src="../images/logo_white.png" alt="Logo" class="contact-logo-img" />
           </div>
           <div class="contact-address">
-            <p class="contact-address-name contact-address-item">
-              <span>Witold Goj</span><br>ul. Krakowska 25/17<br>32-500 Katowice
-            </p>
-            <p class="contact-address-id contact-address-item">
-              KRS: 0000031349<br>
-              NIP: 2562378410
-            </p>
-            <p class="contact-address-mail contact-address-item">
-              Tel.: +48 639 852 741<br>
-              E-mail: <span>kontakt@witabud.pl</span>
-            </p>
+            <div class="contact-address-name contact-address-item">
+              <h5>Witold Goj</h5>
+              <p>ul. Krakowska 25/17</p>
+              <p>32-500 Katowice</p>
+            </div>
+            <div class="contact-address-id contact-address-item">
+              <p>KRS: 0000031349</p>
+              <p>NIP: 2562378410</p>
+            </div>
+            <div class="contact-address-mail contact-address-item">
+              <p>Tel.: +48 639 852 741</p>
+              <p>E-mail: <span>kontakt@witabud.pl</span></p>
+            </div>
           </div>
           <div class="contact-social">
             <p>Obserwuj</p>
             <div class="contact-social-icons">
-              <div class="contact-social-item"><i class="fab fa-facebook-f"></i></div>
-              <div class="contact-social-item"><i class="fab fa-google-plus-g"></i></div>
-              <div class="contact-social-item"><i class="fab fa-instagram"></i></div>
+              <div class="contact-social-item">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="contact-social-item">
+                <i class="fab fa-google-plus-g"></i>
+              </div>
+              <div class="contact-social-item">
+                <i class="fab fa-instagram"></i>
+              </div>
             </div>
           </div>
           <ul class="contact-menu">
             <li class="contact-menu-item">
-              <a href="../index.html" class="contact-menu-item-link">Strona
-                główna</a>
+              <a href="../index.html" class="contact-menu-item-link">Strona główna</a>
             </li>
             <li class="contact-menu-item">
-              <a href="#" class="contact-menu-item-link">O firmie</a>
+              <a href="#about" class="contact-menu-item-link">O firmie</a>
             </li>
             <li class="contact-menu-item">
-              <a href="#" class="contact-menu-item-link">Usługi</a>
+              <a href="#services" class="contact-menu-item-link">Usługi</a>
             </li>
             <li class="contact-menu-item">
-              <a href="./realizations.html" class="contact-menu-item-link">Realizacje</a>
+              <a href="./html/realizations.html" class="contact-menu-item-link">Realizacje</a>
             </li>
             <li class="contact-menu-item">
-              <a href="#" class="contact-menu-item-link">Kontakt</a>
+              <a href="#contact" class="contact-menu-item-link">Kontakt</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="contact-map">
-      <img src="../images/map_big.jpg" alt="Map">
+      <img src="../images/map_big.jpg" alt="Map" />
       <div class="contact-map-hexagon">
-        <i class="fas fa-arrow-up"></i>
-        <a href="#">
+        <i class="fas fa-arrow-up"></i> <a href="#">
           <p>Do góry</p>
         </a>
       </div>
     </div>
   </section>
+
   <footer>
     <p>2016 &copy; Made with passion by <span>Time4.pl</span></p>
   </footer>

@@ -28,7 +28,6 @@
 }
 
 .realizations-controller-container {
-  // width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,6 @@
 
   &-header {
     font-size: $font-size-s;
-    // padding: 30px 0 27px 0;
     padding-bottom: 27px;
   }
 
@@ -79,7 +77,6 @@
     font-family: $roboto;
     line-height: 24px;
     color: $services-paragraph;
-    // padding-bottom: 32px;
   }
 
   &-text {
@@ -89,12 +86,11 @@
   }
 }
 
-//RWD
+//RWD==========================================================================
 //Min width 768px
 @media all and (min-width: 768px) {
   .realizations-item {
     display: flex;
-    // width: 90%;
   }
 
   .realizations-controller-container {

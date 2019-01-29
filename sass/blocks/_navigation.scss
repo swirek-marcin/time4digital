@@ -101,26 +101,18 @@ body.active {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    //Zmiana z absolute na relative
-    // right: 0;
-    // top: 0;
     background-color: transparent;
     height: 90px;
   }
 
   .menu-item {
-    // display: flex;
-    // align-items: center;
     font-size: $font-size-xxs;
     padding-right: 37px;
     padding-left: 0;
     text-align: center;
-    // line-height: 20px;
-    // height: auto;
 
     >a {
       color: $mobile-menu-background;
-      // line-height: 90px;
       transition: .3s;
 
       &::after {
@@ -167,10 +159,6 @@ body.active {
 
 //Min width 1170px
 @media all and (min-width: 1170px) {
-  // .menu {
-  //   right: calc((100% - 1170px) / 2);
-  // }
-
   .menu-item {
 
     a {

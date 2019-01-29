@@ -3,7 +3,7 @@
 @import '../variables/fonts';
 
 .tiles-container {
-  width: 90%;
+  padding: 0 25px;
   margin: 0 auto;
   font-family: $roboto;
   text-align: justify;
@@ -17,7 +17,7 @@
   line-height: 130px;
   background-image: url(../../images/services_article.png);
   background-color: $yellow;
-  text-align: center;
+  padding-left: 25px;
   margin-bottom: 49px;
   width: 100%;
 }
@@ -26,22 +26,29 @@
   font-size: $afont-size-l;
   color: $tiles-subheader;
   line-height: 30px;
-  padding-bottom: 49px;
 }
 
 .tiles-paragraph {
   font-size: $afont-size-s;
   color: $tiles-paragraph;
   line-height: 30px;
+  padding: 30px 0;
 }
 
 .tiles-img-container {
   display: flex;
   justify-content: center;
+  min-height: 263px;
+  position: relative;
 }
 
 .tiles-img {
-  margin: 31px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 263px;
+  padding: 0 25px;
 }
 
 .tiles-form {
@@ -49,8 +56,7 @@
   flex-wrap: wrap;
   background-color: $black;
   justify-content: center;
-  margin-top: 41px;
-  margin-bottom: 65px;
+  margin-bottom: 25px;
 
   h3 {
     color: $white;
@@ -96,25 +102,28 @@
 .tiles-info {
   margin: 0 auto;
   background-color: $tiles-description;
+  text-align: left;
+  padding: 37px;
 
   &-header {
     font-size: $font-size-s;
     text-transform: uppercase;
     font-family: $spartan;
-    line-height: 80px;
-    text-align: center;
+    padding-bottom: 20px;
   }
 
   &-subheader {
     color: $tiles-info-span;
     font-size: $font-size-s;
-    padding: 0 15px 20px 15px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-bottom: 20px;
   }
 
   &-paragraph {
-    padding: 0 15px 36px 15px;
     color: $tiles-info-paragraph;
     font-size: $font-size-xs;
+    line-height: 24px;
   }
 }
 
@@ -124,7 +133,6 @@
   .tiles-header {
     font-size: $font-size-xl;
     text-align: left;
-    padding-left: 3%;
   }
 
   .tiles-form {
@@ -151,25 +159,57 @@
 
 //Min width 768px 
 @media all and (min-width: 768px) {
+  .tiles-container {
+    padding: 0 30px;
+  }
+
   .tiles-img {
-    margin: 65px auto;
+    max-height: 380px;
+  }
+
+  .tiles-img-container {
+    height: 380px;
+    max-height: 380px;
+    margin: 65px 0;
+  }
+
+  .tiles-subheader {
+    padding-bottom: 40px;
+  }
+
+  .tiles-paragraph {
+    padding: 0;
   }
 
   .tiles-form {
+    margin-top: 41px;
+    padding: 36px;
+
     h3 {
-      width: 80%;
+      width: 100%;
+      padding-top: 0;
     }
 
     :nth-child(2) {
-      width: 39%;
+      width: 49%;
       margin-right: 1%;
     }
 
     :nth-child(3) {
-      width: 39%;
+      width: 49%;
       margin-left: 1%;
     }
 
+    :nth-child(4),
+    :nth-child(5),
+    :nth-child(6),
+      {
+      width: 100%;
+    }
+  }
+
+  .form-submit {
+    margin-bottom: 0;
   }
 }
 
@@ -177,49 +217,53 @@
 @media all and (min-width: 1024px) {
   .tiles-header {
     margin-bottom: 80px;
+    padding-left: 37px
   }
 
   .tiles-container {
+    padding: 0 37px;
     display: flex;
     justify-content: space-between;
-    width: 95%;
+  }
+
+  .tiles-img-container {
+    margin: 40px 0;
+    max-width: 623px;
   }
 
   .tiles-form {
     margin-top: 0;
 
-    h3 {
-      width: 80%;
-    }
-
-    :nth-child(2) {
-      width: 80%;
-      margin-right: 0;
-    }
-
+    :nth-child(2),
     :nth-child(3) {
-      width: 80%;
+      width: 100%;
+      margin-right: 0;
       margin-left: 0;
     }
+  }
+
+  .msg-input {
+    height: 145px;
   }
 
   .tiles-form-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // width: 100%;
     width: 370px;
     padding-left: 30px;
   }
 
   .tiles-text-container {
-    width: 95%;
+    max-width: 623px;
+    overflow: hidden;
   }
 
   .tiles-info {
 
     &-header {
-      line-height: 90px;
+      line-height: 0;
+      padding: 20px 0 40px 0;
     }
 
     &-subheader {
@@ -242,6 +286,26 @@
 
     &-container {
       width: 100%;
+      padding: 0;
+    }
+
+    &-text-container {
+      min-width: 737px; 
+    }
+
+    &-form-container {
+      width: 370px;
+      padding-left: 0;
+    }
+
+    &-img-container {
+      max-width: 737px;
+      min-height: 450px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

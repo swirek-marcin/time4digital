@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 
-.emergency-header {
+.emergency-header-container {
   font-family: $roboto;
   color: $emergency-paragraph;
   font-size: $font-size-s;
@@ -25,17 +25,24 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: $font-size-s;
+  font-size: $font-size-xs;
   padding-bottom: 30px;
   text-transform: uppercase;
 }
 
 .emergency-number {
-  font-size: $font-size-l;
+  font-size: $font-size-s;
 }
 
 //Min width 480px
 @media all and (min-width: 480px) {
+  .emergency-number {
+    font-size: $font-size-l;
+  }
+
+  .emergency-phone {
+    font-size: $font-size-s;
+  }
 }
 
 //RWD
@@ -48,16 +55,25 @@
 
   .emergency-phone {
     padding-bottom: 0;
+    padding-left: 20px;
     flex-grow: 1;
+    font-size: $font-size-s;
+  }
+
+  .emergency-header {
+    text-align: left;
   }
 }
 
 //Min width 1024px
 @media all and (min-width: 1024px) {
-  .emergency-header {
+  .emergency-header-container {
+    display: flex;
+    justify-content: space-between;
     font-size: $font-size-m;
     line-height: 100px;
     padding: 0;
+    width: 52%;
   }
 
   .emergency-phone {
@@ -86,7 +102,8 @@
     justify-content: space-between;
   }
 
-  .emergency-header {
+  .emergency-header-container {
     margin: 0;
+    justify-content: space-around;
   }
 }

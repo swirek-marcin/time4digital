@@ -47,7 +47,7 @@
 
 .contact-social-item::after { transform: rotate(-60deg); }
 
-.contact-social-item i { z-index: 998; font-size: 23px; }
+.contact-social-item span { z-index: 998; font-size: 23px; }
 
 .contact-menu { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -65,7 +65,7 @@
 
 .contact-map-hexagon p { position: absolute; top: 200%; left: -10%; color: #f8db14; text-align: center; text-transform: uppercase; font-size: 14px; width: 80px; }
 
-.contact-map-hexagon i { z-index: 997; font-size: 23px; }
+.contact-map-hexagon span { z-index: 997; font-size: 23px; }
 
 .contact-map-hexagon::before, .contact-map-hexagon::after { content: ''; width: 100%; height: 100%; background-color: #f8db14; position: absolute; }
 
@@ -238,7 +238,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .realizations-controller-arrows { font-size: 23px; }
 
-.realizations-controller-arrows > i { padding-right: 20px; }
+.realizations-controller-arrows > span { padding-right: 20px; }
 
 .realizations-item { position: relative; width: 100%; overflow: hidden; margin: 0 auto; border: 1px solid #e9e9e9; margin-bottom: 10px; }
 

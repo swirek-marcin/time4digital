@@ -56,8 +56,10 @@
     }
 
     &-mail {
-      span {
-        color: $yellow;
+      p:last-of-type {
+        a {
+          color: $yellow;
+        }
       }
     }
   }

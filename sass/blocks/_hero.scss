@@ -72,17 +72,18 @@
   text-transform: uppercase;
   font-family: $spartan;
   cursor: pointer;
+  text-align: center;
 
   &-one {
     width: 300px;
-    height: 54px;
+    line-height: 54px;
     background-color: $yellow;
     margin-bottom: 15px;
   }
 
   &-two {
     width: 300px;
-    height: 54px;
+    line-height: 54px;
     background-color: rgba($black, 0.5);
     color: $yellow;
   }
@@ -124,6 +125,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 
     &-container {
       display: flex;

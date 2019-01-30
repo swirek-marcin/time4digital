@@ -31,7 +31,7 @@
 
 .contact-address-name h5 { font-size: 18px; font-family: "Roboto", Spartan, sans-serif; text-transform: uppercase; color: #808080; font-weight: 700; }
 
-.contact-address-mail span { color: #f8db14; }
+.contact-address-mail p:last-of-type a { color: #f8db14; }
 
 .contact-social { border-bottom: 1px solid #1e1e1e; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
@@ -141,11 +141,11 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 .hero-paragraph { font-size: 14px; color: #fff; padding-bottom: 20px; }
 
-.hero-btn { border: none; font-size: 14px; text-transform: uppercase; font-family: Spartan, "Roboto", sans-serif; cursor: pointer; }
+.hero-btn { border: none; font-size: 14px; text-transform: uppercase; font-family: Spartan, "Roboto", sans-serif; cursor: pointer; text-align: center; }
 
-.hero-btn-one { width: 300px; height: 54px; background-color: #f8db14; margin-bottom: 15px; }
+.hero-btn-one { width: 300px; line-height: 54px; background-color: #f8db14; margin-bottom: 15px; }
 
-.hero-btn-two { width: 300px; height: 54px; background-color: rgba(0, 0, 0, 0.5); color: #f8db14; }
+.hero-btn-two { width: 300px; line-height: 54px; background-color: rgba(0, 0, 0, 0.5); color: #f8db14; }
 
 .hero-arrow-down { font-size: 36px; color: #fff; }
 
@@ -153,7 +153,7 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 .slider-controller-container { position: absolute; bottom: 25px; left: 25px; right: 25px; display: none; }
 
-@media all and (min-width: 480px) { .slider-controller { width: 47px; height: 47px; border: 2px solid #fff; color: #fff; font-size: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+@media all and (min-width: 480px) { .slider-controller { width: 47px; height: 47px; border: 2px solid #fff; color: #fff; font-size: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; background-color: transparent; }
   .slider-controller-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
   .slider-controller-icon { display: block; }
   .hero-services { font-size: 36px; } }
@@ -506,6 +506,8 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { margin: 0 auto; font-family: Spartan, sans-serif; right: 0; top: 0; transition: .5s all linear; }
+
+a { cursor: pointer; }
 
 .container { margin: 0 auto; width: 1170px; max-width: 100%; }
 

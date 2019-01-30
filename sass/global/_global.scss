@@ -17,6 +17,10 @@ body {
   transition: .5s all linear;
 }
 
+a {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   width: 1170px;

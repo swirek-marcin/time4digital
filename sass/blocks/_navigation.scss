@@ -64,6 +64,8 @@ body.active {
   right: 25px;
   font-size: $font-size-xl;
   color: $hamburger-icon;
+  border: none;
+  background-color: transparent;
 }
 
 .hamburger-icon.active {

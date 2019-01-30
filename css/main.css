@@ -196,7 +196,7 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .menu-item:first-child { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 14px; color: #797979; }
 
-.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; }
+.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; border: none; background-color: transparent; }
 
 .hamburger-icon.active { display: none; }
 

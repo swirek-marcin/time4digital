@@ -84,6 +84,7 @@
     line-height: 54px;
     background-color: rgba($black, 0.5);
     color: $yellow;
+    text-decoration: none;
   }
 }
 
@@ -124,7 +125,12 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-
+    cursor: pointer;
+    
+    &:focus {
+      display: none;
+    }
+    
     &-container {
       display: flex;
       justify-content: space-between;

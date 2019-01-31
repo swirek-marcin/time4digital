@@ -14,9 +14,13 @@
 
 .contact-address-item { width: 80%; padding-bottom: 44px; }
 
-.contact-address-name { padding-top: 28px; }
+.contact-address-name { padding-top: 28px; font-style: normal; }
 
 .contact-address-name h5 { font-size: 18px; font-family: "Roboto", Spartan, sans-serif; text-transform: uppercase; color: #808080; font-weight: 700; }
+
+.contact-address-mail a { text-decoration: none; }
+
+.contact-address-mail p:first-of-type a { color: inherit; }
 
 .contact-address-mail p:last-of-type a { color: #f8db14; }
 
@@ -128,7 +132,7 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 .hero-btn-one { width: 300px; line-height: 54px; background-color: #f8db14; margin-bottom: 15px; }
 
-.hero-btn-two { width: 300px; line-height: 54px; background-color: rgba(0, 0, 0, 0.5); color: #f8db14; }
+.hero-btn-two { width: 300px; line-height: 54px; background-color: rgba(0, 0, 0, 0.5); color: #f8db14; text-decoration: none; }
 
 .hero-arrow-down { font-size: 36px; color: #fff; }
 
@@ -136,7 +140,8 @@ footer span { font-size: 12px; color: #7f7f7f; }
 
 .slider-controller-container { position: absolute; bottom: 25px; left: 25px; right: 25px; display: none; }
 
-@media all and (min-width: 480px) { .slider-controller { width: 47px; height: 47px; border: 2px solid #fff; color: #fff; font-size: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; background-color: transparent; }
+@media all and (min-width: 480px) { .slider-controller { width: 47px; height: 47px; border: 2px solid #fff; color: #fff; font-size: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; background-color: transparent; cursor: pointer; }
+  .slider-controller:focus { display: none; }
   .slider-controller-container { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
   .slider-controller-icon { display: block; }
   .hero-services { font-size: 36px; } }
@@ -177,7 +182,9 @@ body.active { position: absolute; right: 300px; top: 0; transition: .5s all line
 
 .menu-item:first-child { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 14px; color: #797979; }
 
-.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; border: none; background-color: transparent; }
+.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; border: none; background-color: transparent; cursor: pointer; }
+
+.hamburger:focus { display: none; }
 
 .hamburger-icon.active { display: none; }
 

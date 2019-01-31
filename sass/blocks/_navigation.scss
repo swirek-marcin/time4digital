@@ -64,6 +64,11 @@ body.active {
   color: $hamburger-icon;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    display: none;
+  }
 }
 
 .hamburger-icon.active {

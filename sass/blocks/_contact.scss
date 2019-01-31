@@ -42,6 +42,7 @@
 
     &-name {
       padding-top: 28px;
+      font-style: normal;
 
       h5 {
         font-size: $font-size-s;
@@ -53,6 +54,17 @@
     }
 
     &-mail {
+
+      a {
+        text-decoration: none;
+      }
+
+      p:first-of-type {
+        a {
+          color: inherit;
+        }
+      }
+
       p:last-of-type {
         a {
           color: $yellow;
@@ -144,7 +156,6 @@
     overflow: hidden;
     max-height: 300px;
     position: relative;
-    // padding: 0;
 
     img {
       filter: grayscale(40);

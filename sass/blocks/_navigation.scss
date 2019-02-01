@@ -1,10 +1,14 @@
 //Navigation section
 
 body.active {
-  position: absolute;
   right: 300px;
-  top: 0;
   transition: .5s all linear;
+}
+
+.menu-push {
+  overflow-x: hidden;
+  position: relative;
+  right: 0;
 }
 
 .logo-container {
@@ -71,9 +75,9 @@ body.active {
   }
 }
 
-.hamburger-icon.active {
-  display: none;
-}
+// .hamburger-icon.active {
+//   display: none;
+// }
 
 .menu-controller {
   display: flex;

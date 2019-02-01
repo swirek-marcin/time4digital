@@ -32,7 +32,6 @@
     justify-content: center;
     text-align: center;
     color: $contact-name;
-    font-family: $roboto;
     border-bottom: 1px solid $contact-after;
 
     &-item {
@@ -43,8 +42,9 @@
     &-name {
       padding-top: 28px;
       font-style: normal;
+      font-family: $roboto;
 
-      h5 {
+      p:first-of-type {
         font-size: $font-size-s;
         font-family: $roboto;
         text-transform: uppercase;
@@ -80,6 +80,7 @@
 
     p {
       font-size: $font-size-xxs;
+      font-family: $spartan;
       text-transform: uppercase;
       color: $text-contact-social;
       padding: 40px;
@@ -144,6 +145,7 @@
         color: $white;
         text-transform: uppercase;
         line-height: 52px;
+        font-family: $spartan;
 
         &:hover {
           color: $yellow;
@@ -185,6 +187,7 @@
         text-align: center;
         text-transform: uppercase;
         font-size: $font-size-xs;
+        font-family: $spartan;
         width: 80px;
       }
 
@@ -347,7 +350,7 @@
 
     &-wrapper {
       display: flex;
-      padding-left: 20px;
+      padding-left: 37px;
     }
 
     &-social-icons {
@@ -388,7 +391,7 @@
       &-name {
         padding-top: 0;
 
-        h5 {
+        p:first-of-type {
           font-size: $font-size-xs;
         }
       }

@@ -3,7 +3,6 @@
 .tiles-container {
   padding: 0 25px;
   margin: 0 auto;
-  font-family: $roboto;
   text-align: justify;
   overflow: hidden;
 }
@@ -22,6 +21,7 @@
 
 .tiles-subheader {
   font-size: $afont-size-l;
+  font-family: $roboto;
   color: $tiles-subheader;
   line-height: 30px;
 }
@@ -112,6 +112,7 @@
 
   &-subheader {
     color: $tiles-info-span;
+    font-family: $roboto;
     font-size: $font-size-s;
     line-height: 30px;
     font-weight: 300;
@@ -157,9 +158,9 @@
 
 //Min width 768px 
 @media all and (min-width: 768px) {
-  .tiles-container {
-    padding: 0 30px;
-  }
+  // .tiles-container {
+  //   padding: 0 30px;
+  // }
 
   .tiles-img {
     max-height: 380px;

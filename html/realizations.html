@@ -12,51 +12,53 @@
   <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body class="rwd">
-  <button class="hamburger">
-    <span class="fas fa-bars hamburger-icon rwd"></span>
-  </button>
-  <nav class="navigation" id="nav-bar">
-    <div class="container">
-      <div class="navigation-container">
-        <div class="logo-container">
-          <img class="logo-img" src="../images/logo_480.png" alt="Logo" />
+<body class="rwd menu-push">
+  <header>
+    <button class="hamburger">
+      <span class="fas fa-bars hamburger-icon rwd"></span>
+    </button>
+    <nav class="navigation" id="nav-bar">
+      <div class="container">
+        <div class="navigation-container">
+          <h1 class="logo-container">
+            <img class="logo-img" src="../images/logo_480.png" alt="Logo" />
+          </h1>
+          <ul class="rwd menu">
+            <li class="menu-item">
+              <span class="fas fa-angle-left menu-controller-icon hamburger-icon rwd active"></span>
+              <p class="hamburger-icon">Wróć</p>
+            </li>
+            <li class="menu-item">
+              <a href="../index.html" class="menu-item-link tablinks">Strona główna</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">O firmie</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link">Usługi</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-link tablinks">Realizacje</a>
+            </li>
+            <li class="menu-item">
+              <a href="#contact" class="menu-item-link">Kontakt</a>
+            </li>
+          </ul>
         </div>
-        <ul class="rwd menu">
-          <li class="menu-item">
-            <span class="fas fa-angle-left menu-controller-icon hamburger-icon rwd active"></span>
-            <p class="hamburger-icon">Wróć</p>
-          </li>
-          <li class="menu-item">
-            <a href="../index.html" class="menu-item-link tablinks">Strona główna</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">O firmie</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link">Usługi</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-item-link tablinks">Realizacje</a>
-          </li>
-          <li class="menu-item">
-            <a href="#contact" class="menu-item-link">Kontakt</a>
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <section class="tiles">
-    <h1 class="tiles-header">układanie kafelek</h1>
+    <h2 class="tiles-header">układanie kafelek</h2>
     <div class="container">
       <div class="tiles-container">
         <div class="tiles-text-container">
-          <h4 class="tiles-subheader">
+          <h3 class="tiles-subheader">
             Sagittis tortor orci at metus. Nullam consequat faucibus, fermentum vel, viverra consectetuer. Curabitur
             vel
             massa. Nunc varius dui. In vitae turpis id purus magnis dis parturient montes, nascetur ridiculus rem.
-          </h4>
+          </h3>
           <p class="tiles-paragraph">
             Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac
             turpis velit, honcus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus
@@ -91,9 +93,9 @@
           </form>
           <div class="tiles-info">
             <h3 class="tiles-info-header">Donec nonummy</h3>
-            <h5 class="tiles-info-subheader">
+            <h4 class="tiles-info-subheader">
               Curabitur vel massa. Nunc varius dui. In vitae turpis id purus magnis dis parturient montes, nascetur
-              ridiculus musisus nibh eu lorem.</h5>
+              ridiculus musisus nibh eu lorem.</h4>
             <p class="tiles-info-paragraph">
               Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue fusce
               congue. Integer id erat metus vitae feugiat eget, volutpat a, hendrerit et, ultricies a, volutpat quis
@@ -111,7 +113,7 @@
   <section class="realizations">
     <div class="container">
       <div class="realizations-text-container">
-        <h1 class="realizations-header-article">Realizacje</h1>
+        <h2 class="realizations-header-article">Realizacje</h2>
         <div class="realizations-article-flex">
           <div class="realizations-article-item">
             <div class="realizations-article-img-container"><img src="../images/realizations_1.png" alt="Photo" class="realizations-article-img"></div>
@@ -231,12 +233,12 @@
     <div class="container">
       <div class="contact-wrapper">
         <div class="contact-container">
-          <div class="contact-logo">
+          <h2 class="contact-logo">
             <img src="../images/logo_white.png" alt="Logo" class="contact-logo-img" />
-          </div>
+          </h2>
           <div class="contact-address">
             <address class="contact-address-name contact-address-item">
-              <h5>Witold Goj</h5>
+              <p>Witold Goj</p>
               <p>ul. Krakowska 25/17</p>
               <p>32-500 Katowice</p>
             </address>
@@ -245,8 +247,8 @@
               <p>NIP: 2562378410</p>
             </div>
             <div class="contact-address-mail contact-address-item">
-              <p>Tel.: <a href="tel:+48 639 852 741">+48 639 852 741</a></p>
-              <p>E-mail: <a href="mailto: kontakt@witabud.pl">kontakt@witabud.pl</a></p>
+              <p>Tel.: <a href="tel:+48639852741">+48 639 852 741</a></p>
+              <p>E-mail: <a href="mailto:kontakt@witabud.pl">kontakt@witabud.pl</a></p>
             </div>
           </div>
           <div class="contact-social">

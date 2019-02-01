@@ -13,6 +13,10 @@
   padding-bottom: 33px;
 }
 
+.realizations-link {
+  font-family: $spartan;
+}
+
 .realizations-text-container {
   width: 100%;
   margin: 0 auto;
@@ -22,7 +26,6 @@
   font-size: $font-size-xs;
   line-height: 24px;
   color: $realizations-subheader;
-  font-family: $roboto;
 }
 
 .realizations-controller-container {
@@ -72,7 +75,6 @@
 
   &-paragraph {
     font-size: $font-size-xs;
-    font-family: $roboto;
     line-height: 24px;
     color: $services-paragraph;
   }
@@ -105,6 +107,12 @@
 
 //Min width 1024px
 @media all and (min-width: 1024px) {
+  .realizations {
+    padding-left:37px;
+    padding-right: 37px;
+    margin: 0 auto;
+  }
+
   .realizations-header {
     float: left;
     padding-top: 60px;
@@ -189,6 +197,11 @@
 
 //min width 1480px
 @media all and (min-width: 1480px) {
+  .realizations {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .realizations-paragraph {
     width: 90%;
   }

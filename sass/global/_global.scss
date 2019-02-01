@@ -9,10 +9,16 @@
 
 body {
   margin: 0 auto;
-  font-family: Spartan, sans-serif;
-  right: 0;
-  top: 0;
+  font-family: $roboto, sans-serif;
   transition: .5s all linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $spartan, sans-serif;
 }
 
 a {

@@ -8,6 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .team-item {
@@ -16,7 +18,7 @@
   align-items: center;
   text-align: center;
   height: 260px;
-  width: 90%;
+  width: 100%;
   border: 1px solid $border-gray;
   margin-top: 10px;
 
@@ -43,7 +45,6 @@
 .team-paragraph {
   color: $team-paragraph;
   font-size: $font-size-xs;
-  font-family: $roboto;
   text-align: center;
   line-height: 25px;
   width: 86%;

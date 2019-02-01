@@ -166,7 +166,7 @@ footer span { font-size: 12px; color: #7f7f7f; }
   .hero-header-container { text-align: left; }
   .hero-services { padding-bottom: 50px; } }
 
-body.active { right: 300px; transition: .5s all linear; }
+.menu-push.active { right: 300px; transition: .5s all linear; }
 
 .menu-push { overflow-x: hidden; position: relative; right: 0; }
 
@@ -174,7 +174,7 @@ body.active { right: 300px; transition: .5s all linear; }
 
 .logo-img { margin-left: 25px; }
 
-.menu { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; top: 0; right: -320px; width: 300px; height: 100vh; background-color: #2a2a2a; z-index: 999; transition: .5s all linear; }
+.menu { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: fixed; top: 0; right: -320px; width: 300px; height: 100vh; background-color: #2a2a2a; z-index: 998; transition: .5s all linear; }
 
 .menu.active { right: 0; }
 
@@ -184,7 +184,7 @@ body.active { right: 300px; transition: .5s all linear; }
 
 .menu-item:first-child { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-size: 14px; color: #797979; }
 
-.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; border: none; background-color: transparent; cursor: pointer; }
+.hamburger { position: absolute; top: 25px; right: 25px; font-size: 30px; color: #4d4d4d; border: none; background-color: transparent; cursor: pointer; z-index: 995; }
 
 .hamburger:focus { display: none; }
 

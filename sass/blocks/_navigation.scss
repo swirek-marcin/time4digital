@@ -1,6 +1,6 @@
 //Navigation section
 
-body.active {
+.menu-push.active {
   right: 300px;
   transition: .5s all linear;
 }
@@ -30,7 +30,7 @@ body.active {
   width: 300px;
   height: 100vh;
   background-color: $mobile-menu-background;
-  z-index: 999;
+  z-index: 998;
   transition: .5s all linear;
 }
 
@@ -69,6 +69,7 @@ body.active {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 995;
 
   &:focus {
     display: none;
